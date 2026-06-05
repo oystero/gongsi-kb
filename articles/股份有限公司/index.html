@@ -7,18 +7,42 @@
     })();
   </script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/gongsi-kb/_astro/index.DAB3Pb70.css">
 <style>.scrollbar-thin[data-astro-cid-ligjhper]::-webkit-scrollbar{width:4px}.scrollbar-thin[data-astro-cid-ligjhper]::-webkit-scrollbar-track{background:transparent}.scrollbar-thin[data-astro-cid-ligjhper]::-webkit-scrollbar-thumb{background-color:#9ca3af4d;border-radius:2px}.scrollbar-thin[data-astro-cid-ligjhper]::-webkit-scrollbar-thumb:hover{background-color:#9ca3af80}.dark .scrollbar-thin[data-astro-cid-ligjhper]::-webkit-scrollbar-thumb{background-color:#4b556366}.mermaid{text-align:center;overflow-x:auto}
-</style></head> <body class="bg-primary-50 dark:bg-primary-950 text-gray-900 dark:text-gray-100 font-sans min-h-screen flex flex-col"> <!-- Reading Progress --> <div id="reading-progress" class="fixed top-0 left-0 h-[2px] bg-accent-500/80 z-50 transition-all duration-150" style="width: 0%"></div> <!-- Header --> <header class="sticky top-0 z-40 bg-white/90 dark:bg-primary-900/90 backdrop-blur-sm border-b border-primary-200 dark:border-primary-800/60"> <div class="max-w-[1800px] mx-auto px-6 h-14 flex items-center justify-between"> <div class="flex items-center gap-3"> <a href="/gongsi-kb/" class="flex items-center gap-2.5 text-base font-semibold tracking-tight text-primary-700 dark:text-accent-400 hover:opacity-80 transition-opacity"> <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"></path></svg> <span class="hidden sm:inline font-display">公司法知识库</span> </a> </div> <div class="flex items-center gap-2"> <a href="/gongsi-kb/search/" class="flex items-center gap-2 px-3 py-1.5 rounded-md bg-primary-100 dark:bg-primary-800/60 text-gray-500 dark:text-gray-400 hover:bg-primary-200 dark:hover:bg-primary-700/60 transition-colors text-sm" title="搜索"> <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg> <span class="hidden md:inline text-xs">搜索</span> <kbd class="hidden md:inline px-1 py-0.5 text-[10px] bg-primary-200/60 dark:bg-primary-700/60 rounded text-gray-400 dark:text-gray-500">⌘K</kbd> </a> <a href="/gongsi-kb/graph/" class="p-1.5 rounded-md text-gray-400 dark:text-gray-500 hover:bg-primary-100 dark:hover:bg-primary-800/60 transition-colors" title="知识图谱"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"></circle><circle cx="18" cy="6" r="2"></circle><circle cx="6" cy="18" r="2"></circle><circle cx="18" cy="18" r="2"></circle><circle cx="12" cy="12" r="2"></circle><path d="M8 6h8M6 8v8M18 8v8M8 18h8M8 8l4 4M16 8l-4 4M8 16l4-4M16 16l-4-4"></path></svg> </a> <button id="theme-toggle" class="p-1.5 rounded-md text-gray-400 dark:text-gray-500 hover:bg-primary-100 dark:hover:bg-primary-800/60 transition-colors" title="切换主题"> <svg id="theme-light-icon" class="w-4 h-4 hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path></svg> <svg id="theme-dark-icon" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg> </button> <button id="mobile-menu-toggle" class="p-1.5 rounded-md text-gray-400 dark:text-gray-500 hover:bg-primary-100 dark:hover:bg-primary-800/60 transition-colors lg:hidden"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg> </button> </div> </div> </header> <div class="flex flex-1 max-w-[1800px] mx-auto w-full"> <aside id="sidebar" class="fixed lg:sticky top-14 left-0 z-30 w-56 xl:w-64 h-[calc(100vh-3.5rem)] overflow-y-auto bg-white dark:bg-primary-900/80 border-r border-primary-200 dark:border-primary-800/40 transform -translate-x-full transition-transform duration-300 flex-shrink-0 lg:translate-x-0"> <nav class="p-3 space-y-0.5"> <a href="/gongsi-kb/" class="flex items-center gap-2 px-3 py-2 rounded-md text-sm transition-colors text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="font-display text-xs">首页</span> </a> <div class="pt-3 pb-1.5 px-3 text-[10px] font-medium text-gray-400 dark:text-gray-600 uppercase tracking-widest">知识模块</div> <div class="sidebar-module" data-module="00-法律全文"> <div class="flex items-center"> <a href="/gongsi-kb/modules/00-%E6%B3%95%E5%BE%8B%E5%85%A8%E6%96%87/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">壹</span> <span class="font-display text-xs truncate">法律全文</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/中华人民共和国公司法全文-2023年修订/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 中华人民共和国公司法全文（2023年修订） </a> </div> </div><div class="sidebar-module" data-module="01-总论"> <div class="flex items-center"> <a href="/gongsi-kb/modules/01-%E6%80%BB%E8%AE%BA/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">贰</span> <span class="font-display text-xs truncate">总论</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/公司法总览/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司法总览 </a><a href="/gongsi-kb/articles/公司法基础理论/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司法基础理论 </a><a href="/gongsi-kb/articles/公司的分类/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司的分类 </a><a href="/gongsi-kb/articles/公司的能力/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司的能力 </a> </div> </div><div class="sidebar-module" data-module="02-设立与股东"> <div class="flex items-center"> <a href="/gongsi-kb/modules/02-%E8%AE%BE%E7%AB%8B%E4%B8%8E%E8%82%A1%E4%B8%9C/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">叁</span> <span class="font-display text-xs truncate">设立与股东</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/公司的设立/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司的设立 </a><a href="/gongsi-kb/articles/股东资格与股东权利/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 股东资格与股东权利 </a> </div> </div><div class="sidebar-module" data-module="03-治理与财务"> <div class="flex items-center"> <a href="/gongsi-kb/modules/03-%E6%B2%BB%E7%90%86%E4%B8%8E%E8%B4%A2%E5%8A%A1/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">肆</span> <span class="font-display text-xs truncate">治理与财务</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/董事-监事-高级管理人员制度/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 董事、监事、高级管理人员制度 </a><a href="/gongsi-kb/articles/公司财务会计制度/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司财务会计制度 </a> </div> </div><div class="sidebar-module" data-module="04-变更与终止"> <div class="flex items-center"> <a href="/gongsi-kb/modules/04-%E5%8F%98%E6%9B%B4%E4%B8%8E%E7%BB%88%E6%AD%A2/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">伍</span> <span class="font-display text-xs truncate">变更与终止</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/公司重大变更/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司重大变更 </a><a href="/gongsi-kb/articles/公司解散与清算/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司解散与清算 </a> </div> </div><div class="sidebar-module" data-module="05-有限责任公司"> <div class="flex items-center"> <a href="/gongsi-kb/modules/05-%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">陆</span> <span class="font-display text-xs truncate">有限责任公司</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/有限责任公司/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 有限责任公司 </a> </div> </div><div class="sidebar-module" data-module="06-股份有限公司"> <div class="flex items-center"> <a href="/gongsi-kb/modules/06-%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 bg-accent-50 dark:bg-accent-900/15 text-accent-700 dark:text-accent-400 font-medium"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">柒</span> <span class="font-display text-xs truncate">股份有限公司</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200 rotate-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3"> <a href="/gongsi-kb/articles/股份有限公司/" class="block py-1 text-xs rounded transition-colors truncate text-accent-700 dark:text-accent-400 font-medium"> 股份有限公司 </a> </div> </div><div class="sidebar-module" data-module="07-特殊公司"> <div class="flex items-center"> <a href="/gongsi-kb/modules/07-%E7%89%B9%E6%AE%8A%E5%85%AC%E5%8F%B8/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">捌</span> <span class="font-display text-xs truncate">特殊公司</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/国家出资公司/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 国家出资公司 </a> </div> </div><div class="sidebar-module" data-module="08-实务专题"> <div class="flex items-center"> <a href="/gongsi-kb/modules/08-%E5%AE%9E%E5%8A%A1%E4%B8%93%E9%A2%98/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">玖</span> <span class="font-display text-xs truncate">实务专题</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/实务-公司决议效力判断/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 实务-公司决议效力判断 </a><a href="/gongsi-kb/articles/实务-公司担保的审查与风险/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 实务-公司担保的审查与风险 </a><a href="/gongsi-kb/articles/实务-对赌协议实务/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 实务-对赌协议实务 </a><a href="/gongsi-kb/articles/实务-股权转让与出资责任/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 实务-股权转让与出资责任 </a> </div> </div><div class="sidebar-module" data-module="09-法条索引"> <div class="flex items-center"> <a href="/gongsi-kb/modules/09-%E6%B3%95%E6%9D%A1%E7%B4%A2%E5%BC%95/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">拾</span> <span class="font-display text-xs truncate">法条索引</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/公司法核心法条索引/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司法核心法条索引 </a> </div> </div><div class="sidebar-module" data-module="10-学者观点"> <div class="flex items-center"> <a href="/gongsi-kb/modules/10-%E5%AD%A6%E8%80%85%E8%A7%82%E7%82%B9/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">拾壹</span> <span class="font-display text-xs truncate">学者观点</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/王毓莹教授公司法学术观点/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 王毓莹教授公司法学术观点 </a> </div> </div> </nav> </aside> <main class="flex-1 min-w-0"> <div class="max-w-5xl mx-auto px-6 sm:px-8 lg:px-10 xl:px-12 py-10">  <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6 flex-wrap" data-astro-cid-ligjhper> <a href="/gongsi-kb/" class="hover:text-accent-600 dark:hover:text-accent-400" data-astro-cid-ligjhper>首页</a> <span data-astro-cid-ligjhper>/</span> <a href="/gongsi-kb/modules/06-%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/" class="hover:text-accent-600 dark:hover:text-accent-400" data-astro-cid-ligjhper>股份有限公司</a> <span data-astro-cid-ligjhper>/</span> <span class="text-gray-800 dark:text-gray-200 truncate" data-astro-cid-ligjhper>股份有限公司</span> </nav> <article class="flex gap-8" data-astro-cid-ligjhper> <div class="flex-1 min-w-0" data-astro-cid-ligjhper> <header class="mb-8" data-astro-cid-ligjhper> <h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-primary-800 pb-3 mb-4" data-astro-cid-ligjhper>股份有限公司</h1> <div class="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 flex-wrap" data-astro-cid-ligjhper> <span class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300" data-astro-cid-ligjhper>股份有限公司</span> <span data-astro-cid-ligjhper></span> <span data-astro-cid-ligjhper>8906字</span> <span data-astro-cid-ligjhper>23 分钟阅读</span> </div>  </header> <div class="prose" data-astro-cid-ligjhper><h2 id="一-知识框架">一、知识框架</h2>
+</style></head> <body class="bg-primary-50 dark:bg-primary-950 text-gray-900 dark:text-gray-100 font-sans min-h-screen flex flex-col"> <!-- Reading Progress --> <div id="reading-progress" class="fixed top-0 left-0 h-[2px] bg-accent-500/80 z-50 transition-all duration-150" style="width: 0%"></div> <!-- Header --> <header class="sticky top-0 z-40 bg-white/90 dark:bg-primary-900/90 backdrop-blur-sm border-b border-primary-200 dark:border-primary-800/60"> <div class="max-w-[1800px] mx-auto px-6 h-14 flex items-center justify-between"> <div class="flex items-center gap-3"> <a href="/gongsi-kb/" class="flex items-center gap-2.5 text-base font-semibold tracking-tight text-primary-700 dark:text-accent-400 hover:opacity-80 transition-opacity"> <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"></path></svg> <span class="hidden sm:inline font-display">公司法知识库</span> </a> </div> <div class="flex items-center gap-2"> <a href="/gongsi-kb/search/" class="flex items-center gap-2 px-3 py-1.5 rounded-md bg-primary-100 dark:bg-primary-800/60 text-gray-500 dark:text-gray-400 hover:bg-primary-200 dark:hover:bg-primary-700/60 transition-colors text-sm" title="搜索"> <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg> <span class="hidden md:inline text-xs">搜索</span> <kbd class="hidden md:inline px-1 py-0.5 text-[10px] bg-primary-200/60 dark:bg-primary-700/60 rounded text-gray-400 dark:text-gray-500">⌘K</kbd> </a> <a href="/gongsi-kb/graph/" class="p-1.5 rounded-md text-gray-400 dark:text-gray-500 hover:bg-primary-100 dark:hover:bg-primary-800/60 transition-colors" title="知识图谱"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"></circle><circle cx="18" cy="6" r="2"></circle><circle cx="6" cy="18" r="2"></circle><circle cx="18" cy="18" r="2"></circle><circle cx="12" cy="12" r="2"></circle><path d="M8 6h8M6 8v8M18 8v8M8 18h8M8 8l4 4M16 8l-4 4M8 16l4-4M16 16l-4-4"></path></svg> </a> <button id="theme-toggle" class="p-1.5 rounded-md text-gray-400 dark:text-gray-500 hover:bg-primary-100 dark:hover:bg-primary-800/60 transition-colors" title="切换主题"> <svg id="theme-light-icon" class="w-4 h-4 hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path></svg> <svg id="theme-dark-icon" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg> </button> <button id="mobile-menu-toggle" class="p-1.5 rounded-md text-gray-400 dark:text-gray-500 hover:bg-primary-100 dark:hover:bg-primary-800/60 transition-colors lg:hidden"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg> </button> </div> </div> </header> <div class="flex flex-1 max-w-[1800px] mx-auto w-full"> <aside id="sidebar" class="fixed lg:sticky top-14 left-0 z-30 w-56 xl:w-64 h-[calc(100vh-3.5rem)] overflow-y-auto bg-white dark:bg-primary-900/80 border-r border-primary-200 dark:border-primary-800/40 transform -translate-x-full transition-transform duration-300 flex-shrink-0 lg:translate-x-0"> <nav class="p-3 space-y-0.5"> <a href="/gongsi-kb/" class="flex items-center gap-2 px-3 py-2 rounded-md text-sm transition-colors text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="font-display text-xs">首页</span> </a> <div class="pt-3 pb-1.5 px-3 text-[10px] font-medium text-gray-400 dark:text-gray-600 uppercase tracking-widest">知识模块</div> <div class="sidebar-module" data-module="00-法律全文"> <div class="flex items-center"> <a href="/gongsi-kb/modules/00-%E6%B3%95%E5%BE%8B%E5%85%A8%E6%96%87/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">壹</span> <span class="font-display text-xs truncate">法律全文</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/中华人民共和国公司法全文-2023年修订/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 中华人民共和国公司法全文（2023年修订） </a> </div> </div><div class="sidebar-module" data-module="01-总论"> <div class="flex items-center"> <a href="/gongsi-kb/modules/01-%E6%80%BB%E8%AE%BA/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">贰</span> <span class="font-display text-xs truncate">总论</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/公司法总览/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司法总览 </a><a href="/gongsi-kb/articles/公司法基础理论/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司法基础理论 </a><a href="/gongsi-kb/articles/公司的分类/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司的分类 </a><a href="/gongsi-kb/articles/公司的能力/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司的能力 </a> </div> </div><div class="sidebar-module" data-module="02-设立与股东"> <div class="flex items-center"> <a href="/gongsi-kb/modules/02-%E8%AE%BE%E7%AB%8B%E4%B8%8E%E8%82%A1%E4%B8%9C/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">叁</span> <span class="font-display text-xs truncate">设立与股东</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/公司的设立/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司的设立 </a><a href="/gongsi-kb/articles/股东资格与股东权利/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 股东资格与股东权利 </a> </div> </div><div class="sidebar-module" data-module="03-治理与财务"> <div class="flex items-center"> <a href="/gongsi-kb/modules/03-%E6%B2%BB%E7%90%86%E4%B8%8E%E8%B4%A2%E5%8A%A1/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">肆</span> <span class="font-display text-xs truncate">治理与财务</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/董事-监事-高级管理人员制度/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 董事、监事、高级管理人员制度 </a><a href="/gongsi-kb/articles/公司财务-会计制度/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司财务、会计制度 </a> </div> </div><div class="sidebar-module" data-module="04-变更与终止"> <div class="flex items-center"> <a href="/gongsi-kb/modules/04-%E5%8F%98%E6%9B%B4%E4%B8%8E%E7%BB%88%E6%AD%A2/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">伍</span> <span class="font-display text-xs truncate">变更与终止</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/公司重大变更/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司重大变更 </a><a href="/gongsi-kb/articles/公司解散与清算/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司解散与清算 </a> </div> </div><div class="sidebar-module" data-module="05-有限责任公司"> <div class="flex items-center"> <a href="/gongsi-kb/modules/05-%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">陆</span> <span class="font-display text-xs truncate">有限责任公司</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/有限责任公司/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 有限责任公司 </a> </div> </div><div class="sidebar-module" data-module="06-股份有限公司"> <div class="flex items-center"> <a href="/gongsi-kb/modules/06-%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 bg-accent-50 dark:bg-accent-900/15 text-accent-700 dark:text-accent-400 font-medium"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">柒</span> <span class="font-display text-xs truncate">股份有限公司</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200 rotate-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3"> <a href="/gongsi-kb/articles/股份有限公司/" class="block py-1 text-xs rounded transition-colors truncate text-accent-700 dark:text-accent-400 font-medium"> 股份有限公司 </a> </div> </div><div class="sidebar-module" data-module="07-特殊公司"> <div class="flex items-center"> <a href="/gongsi-kb/modules/07-%E7%89%B9%E6%AE%8A%E5%85%AC%E5%8F%B8/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">捌</span> <span class="font-display text-xs truncate">特殊公司</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/国家出资公司/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 国家出资公司 </a> </div> </div><div class="sidebar-module" data-module="08-实务专题"> <div class="flex items-center"> <a href="/gongsi-kb/modules/08-%E5%AE%9E%E5%8A%A1%E4%B8%93%E9%A2%98/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">玖</span> <span class="font-display text-xs truncate">实务专题</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/实务-公司决议效力判断/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 实务-公司决议效力判断 </a><a href="/gongsi-kb/articles/实务-公司担保的审查与风险/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 实务-公司担保的审查与风险 </a><a href="/gongsi-kb/articles/实务-对赌协议实务/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 实务-对赌协议实务 </a><a href="/gongsi-kb/articles/实务-股权转让与出资责任/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 实务-股权转让与出资责任 </a> </div> </div><div class="sidebar-module" data-module="09-法条索引"> <div class="flex items-center"> <a href="/gongsi-kb/modules/09-%E6%B3%95%E6%9D%A1%E7%B4%A2%E5%BC%95/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">拾</span> <span class="font-display text-xs truncate">法条索引</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/公司法核心法条索引/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司法核心法条索引 </a> </div> </div><div class="sidebar-module" data-module="10-学者观点"> <div class="flex items-center"> <a href="/gongsi-kb/modules/10-%E5%AD%A6%E8%80%85%E8%A7%82%E7%82%B9/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">拾壹</span> <span class="font-display text-xs truncate">学者观点</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/王毓莹教授公司法学术观点/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 王毓莹教授公司法学术观点 </a> </div> </div> </nav> </aside> <main class="flex-1 min-w-0"> <div class="max-w-5xl mx-auto px-6 sm:px-8 lg:px-10 xl:px-12 py-10">  <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6 flex-wrap" data-astro-cid-ligjhper> <a href="/gongsi-kb/" class="hover:text-accent-600 dark:hover:text-accent-400" data-astro-cid-ligjhper>首页</a> <span data-astro-cid-ligjhper>/</span> <a href="/gongsi-kb/modules/06-%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/" class="hover:text-accent-600 dark:hover:text-accent-400" data-astro-cid-ligjhper>股份有限公司</a> <span data-astro-cid-ligjhper>/</span> <span class="text-gray-800 dark:text-gray-200 truncate" data-astro-cid-ligjhper>股份有限公司</span> </nav> <article class="flex gap-8" data-astro-cid-ligjhper> <div class="flex-1 min-w-0" data-astro-cid-ligjhper> <header class="mb-8" data-astro-cid-ligjhper> <h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-primary-800 pb-3 mb-4" data-astro-cid-ligjhper>股份有限公司</h1> <div class="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 flex-wrap" data-astro-cid-ligjhper> <span class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300" data-astro-cid-ligjhper>股份有限公司</span> <span data-astro-cid-ligjhper></span> <span data-astro-cid-ligjhper>1.4万字</span> <span data-astro-cid-ligjhper>34 分钟阅读</span> </div>  </header> <div class="prose" data-astro-cid-ligjhper><h2 id="一-知识框架">一、知识框架</h2>
 <pre><code class="language-mermaid">graph TD
-    A[股份有限公司] --&gt; B[设立·发起人&lt;br&gt;发起设立·募集设立]
-    A --&gt; C[股份与股票&lt;br&gt;面额股·无面额股·类别股]
-    A --&gt; D[股份转让&lt;br&gt;锁定期·回购限制]
-    A --&gt; E[组织机构&lt;br&gt;股东大会·董事会5-19人]
-    A --&gt; F[上市公司&lt;br&gt;上市条件·独立董事·信息披露]
+    A[股份有限公司] --&gt; B[设立]
+    A --&gt; C[组织机构]
+    A --&gt; D[股份发行与转让]
+    A --&gt; E[上市公司]
+
+    B --&gt; B1[概述：发起设立 / 募集设立]
+    B --&gt; B2[发起人 1-200人]
+    B --&gt; B3[注册资本 实缴制]
+    B --&gt; B4[募集设立流程]
+
+    C --&gt; C1[股东会 年会+临时]
+    C --&gt; C2[董事会 3人以上]
+    C --&gt; C3[审计委员会 可替代监事会&lt;br&gt;第121条]
+    C --&gt; C4[监事会 每6个月至少1次]
+
+    D --&gt; D1[发行：面额股/无面额股 择一&lt;br&gt;第142条]
+    D --&gt; D2[类别股 四种类型&lt;br&gt;第143条]
+    D --&gt; D3[授权资本制 董事会3年50%]
+    D --&gt; D4[转让：自由转让原则]
+    D --&gt; D5[锁定期 原始股东1年/董监高&lt;br&gt;第160条]
+    D --&gt; D6[股份回购 6种情形&lt;br&gt;第162条]
+    D --&gt; D7[异议股东回购请求权&lt;br&gt;第161条]
+    D --&gt; D8[禁止财务资助 10%上限&lt;br&gt;第163条]
+
+    E --&gt; E1[股东会特别决议 30%+2/3]
+    E --&gt; E2[独立董事 ≥1/3]
+    E --&gt; E3[关联董事回避]
+    E --&gt; E4[股份代持无效]
+    E --&gt; E5[禁止交叉持股]
 </code></pre>
 <hr>
 <h2 id="二-核心制度详解">二、核心制度详解</h2>
 <h3 id="一-股份公司的概念与特征">（一）股份公司的概念与特征</h3>
-<p>股份有限公司（以下简称&quot;股份公司&quot;）是指全部资本分为等额股份，股东以其所持股份为限对公司承担责任，公司以其全部财产对公司债务承担责任的企业法人。</p>
+<p>股份有限公司（以下简称&quot;股份公司&quot;）是指全部资本划分为等额股份，股东以其所持股份为限对公司承担责任，公司以其全部财产对公司债务承担责任的企业法人。</p>
 <p><strong>核心特征：</strong></p>
 <ul>
 <li><strong>资合性</strong>：以资本的结合作为信用基础，股东之间的人身信任关系不是公司存续的前提。这是与<a href="/gongsi-kb/articles/%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8/">有限责任公司</a>人合性特征的根本区别。</li>
@@ -26,14 +50,9 @@
 <li><strong>资本等额性</strong>：全部资本划分为等额股份，每一股份金额相等，体现股东平等原则。</li>
 <li><strong>组织规范性</strong>：法律对股份公司的组织机构、议事规则、信息披露等有更为严格的要求。</li>
 </ul>
+<hr>
 <h3 id="二-股份公司的设立">（二）◆ 股份公司的设立</h3>
-<h4 id="1-发起人">1. 发起人</h4>
-<p>◆ <strong>发起人条件</strong>：应当有 <strong>1人以上200人以下</strong> 为发起人（新公司法允许一人发起设立股份公司），其中 <strong>半数以上</strong> 的发起人在中国境内有住所（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC92%E6%9D%A1">《公司法》第92条</a>）。</p>
-<p>发起人既可以是自然人，也可以是法人。法律、行政法规禁止从事营利性活动的人（如公务员）不得作为发起人。</p>
-<blockquote>
-<p>○ 发起人承担公司筹办事务。发起人应当签订<strong>发起人协议</strong>，明确各自在公司设立过程中的权利和义务。</p>
-</blockquote>
-<h4 id="2-设立方式">2. 设立方式</h4>
+<h4 id="1-概述">1. 概述</h4>
 <div class="table-wrapper"><table><thead>
 <tr>
 <th>设立方式</th>
@@ -44,13 +63,13 @@
 <tbody>
 <tr>
 <td>定义</td>
-<td>发起人认购全部股份</td>
-<td>发起人认购部分股份，其余向社会公开募集或向特定对象募集</td>
+<td>由发起人认购设立公司时应发行的<strong>全部股份</strong>而设立公司</td>
+<td>由发起人认购公司应发行股份的<strong>一部分</strong>，其余股份向社会公开募集或向特定对象募集而设立公司</td>
 </tr>
 <tr>
 <td>发起人认购比例</td>
 <td>认购全部股份</td>
-<td>不得少于公司股份总数的 <strong>35%</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC93%E6%9D%A1">《公司法》第93条</a>）</td>
+<td>不得少于公司股份总数的 <strong>35%</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC97%E6%9D%A1">《公司法》第97条</a>）</td>
 </tr>
 <tr>
 <td>适用场景</td>
@@ -63,14 +82,22 @@
 <td>需公告招股说明书、签订承销协议等</td>
 </tr>
 </tbody>
-</table></div><h4 id="3-注册资本">3. 注册资本</h4>
+</table></div><blockquote>
+<p>○ <strong>有限公司对比</strong>：有限公司只能采取发起设立的方式，股份公司可以选择发起设立或募集设立。</p>
+</blockquote>
+<h4 id="2-发起人">2. 发起人</h4>
+<p>◆ <strong>发起人条件</strong>：应当有 <strong>1人以上200人以下</strong> 为发起人（新公司法允许一人发起设立股份公司），其中 <strong>半数以上</strong> 的发起人在中国境内有住所（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC92%E6%9D%A1">《公司法》第92条</a>）。</p>
+<p>发起人既可以是自然人，也可以是法人。法律、行政法规禁止从事营利性活动的人（如公务员）不得作为发起人。</p>
+<p>◆ <strong>发起人协议</strong>：发起人承担公司筹办事务，应当签订<strong>发起人协议</strong>，明确各自在公司设立过程中的权利和义务（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC93%E6%9D%A1">《公司法》第93条</a>）。</p>
+<h4 id="3-注册资本">3. 注册资本</h4>
 <p>◆ <strong>注册资本</strong> 为在公司登记机关登记的 <strong>已发行股份的股本总额</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC96%E6%9D%A1">《公司法》第96条</a>）。与有限公司不同，股份公司的注册资本不采用&quot;认缴制&quot;，而是以实际已发行的股份票面金额为准。</p>
 <blockquote>
-<p>▲ <strong>实缴出资</strong>：发起人应当在公司成立前按照其认购的股份<strong>全额缴纳</strong>股款。在发起人认购的股份缴足前，不得向他人募集股份。</p>
+<p>▲ <strong>实缴出资</strong>：发起人应当在公司成立前按照其认购的股份<strong>全额缴纳</strong>股款（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC98%E6%9D%A1">《公司法》第98条</a>）。在发起人认购的股份缴足前，不得向他人募集股份。</p>
 </blockquote>
-<h4 id="3-1-募集设立的特殊规定">3.1 募集设立的特殊规定</h4>
+<h4 id="4-募集设立的特殊规定">4. 募集设立的特殊规定</h4>
 <p><strong>(1) 发起人认购比例</strong>：发起人认购的股份不得少于公司设立时应发行股份总数的<strong>35%</strong>。</p>
-<p><strong>(2) 成立大会</strong></p>
+<p><strong>(2) 公开募集的验资</strong>：向社会公开募集股份的股款缴足后，应当经依法设立的验资机构验资并出具证明。</p>
+<p><strong>(3) 成立大会</strong></p>
 <div class="table-wrapper"><table><thead>
 <tr>
 <th>要点</th>
@@ -95,184 +122,20 @@
 <td>成立大会对上述事项作出决议，必须经出席会议的认股人所持表决权<strong>过半数</strong>通过</td>
 </tr>
 </tbody>
-</table></div><p><strong>(3) 不得抽回股本</strong>：发起人、认股人缴纳股款或者交付抵作股款的出资后，除未按期募足股份、发起人未按期召开成立大会，或者成立大会决议不设立公司的情形外，不得抽回其股本。</p>
-<p><strong>(4) 设立登记</strong>：董事会应当授权代表，于成立大会结束后<strong>30日内</strong>，向公司登记机关申请设立登记。</p>
-<h4 id="4-发起人的连带责任">4. 发起人的连带责任</h4>
-<p>◆ 公司不能成立时，发起人对设立行为所产生的债务和费用负 <strong>连带责任</strong>；对认股人已缴纳的股款，负返还股款并加算银行同期存款利息的连带责任（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC94%E6%9D%A1">《公司法》第94条</a>）。</p>
+</table></div><p><strong>(4) 不得抽回股本</strong>：发起人、认股人缴纳股款或者交付抵作股款的出资后，除未按期募足股份、发起人未按期召开成立大会，或者成立大会决议不设立公司的情形外，不得抽回其股本。</p>
+<p><strong>(5) 设立登记</strong>：董事会应当授权代表，于成立大会结束后<strong>30日内</strong>，向公司登记机关申请设立登记。</p>
+<p><strong>(6) ◆ 募集设立流程（公开募集）</strong></p>
+<blockquote>
+<p>发起人认购最低比例（35%）→ 公告招股说明书 → 制作认股书 → 签订中介机构协议（券商承销协议/银行代收股款协议）→ 募足股款 + 验资报告 → 召开成立大会（时间、组成、职权、表决）→ 董事会授权代表申请设立登记</p>
+</blockquote>
+<h4 id="5-发起人的出资责任">5. 发起人的出资责任</h4>
+<p>◆ 发起人不按照其认购的股份缴纳股款，或者作为出资的非货币财产的实际价额显著低于所认购的股份的，<strong>其他发起人与该发起人在出资不足的范围内承担连带责任</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC99%E6%9D%A1">《公司法》第99条</a>）。</p>
+<blockquote>
+<p>○ <strong>有限公司设立时股东的责任参照适用</strong>：《公司法》第44条关于公司未成立时设立时股东的连带债务等规定，通过<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC107%E6%9D%A1">《公司法》第107条</a>适用于股份有限公司。</p>
+</blockquote>
 <p>在公司设立过程中，因发起人的过失致使公司利益受到损害的，发起人应当对公司承担赔偿责任。</p>
-<h3 id="三-股份与股票">（三）◆ 股份与股票</h3>
-<h4 id="1-股份的特征">1. 股份的特征</h4>
-<ul>
-<li><strong>等额性</strong>：每一股份金额相等，体现同股同权原则。</li>
-<li><strong>可转让性</strong>：股份可以依法转让，这是股份公司开放性的核心体现。</li>
-<li><strong>证券化</strong>：股份以股票为表现形式，股票是股份的证券化载体。</li>
-</ul>
-<h4 id="2-股票的种类">2. 股票的种类</h4>
-<div class="table-wrapper"><table><thead>
-<tr>
-<th>类型</th>
-<th>记名股票</th>
-<th>无记名股票</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>权利人记载</td>
-<td>股东姓名记载于股票和股东名册</td>
-<td>不记载股东姓名</td>
-</tr>
-<tr>
-<td>转让方式</td>
-<td>以背书或法律规定的其他方式交付</td>
-<td>交付即发生转让效力</td>
-</tr>
-<tr>
-<td>适用范围</td>
-<td>发起人、法人股东必须持有记名股票</td>
-<td>向社会公众发行的股票可以为无记名股票</td>
-</tr>
-<tr>
-<td>挂失补发</td>
-<td>可以挂失</td>
-<td>不能挂失</td>
-</tr>
-</tbody>
-</table></div><h4 id="3-面额股制度-新公司法重大变化">3. ◆ 面额股制度（新公司法重大变化）</h4>
-<p>◆ <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC142%E6%9D%A1">《公司法》第142条</a>规定：公司发行的股票，可以为 <strong>面额股</strong>，也可以为 <strong>无面额股</strong>。公司发行无面额股的，应当将发行股份所得股款的 <strong>二分之一以上</strong> 计入注册资本。</p>
-<p>这是新公司法的重大突破，引入了无面额股制度，给予公司更大的资本运作灵活性。无面额股的发行价格不受票面金额限制，由市场供需决定。</p>
-<h4 id="4-股份的发行">4. 股份的发行</h4>
-<ul>
-<li><strong>设立发行</strong>：公司设立时首次发行股份。</li>
-<li><strong>增资发行</strong>：公司成立后为增加资本而发行新股（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC151%E6%9D%A1">《公司法》第151条</a>）。</li>
-</ul>
-<p>公司公开发行股份，应当符合《证券法》等法律、行政法规规定的条件，并经国务院证券监督管理机构或者国务院授权的部门注册。</p>
-<p><strong>发行规则</strong>：股票的发行，实行公平、公正的原则，同类别的每一股份应当具有同等权利。同次发行的同类别股份，每股的发行条件和价格应当相同；认购人所认购的股份，每股应当支付相同价额。</p>
-<p><strong>授权资本制</strong></p>
-<p>2023年《公司法》修订，在股份公司中引入了&quot;有限的授权资本制&quot;：</p>
-<div class="table-wrapper"><table><thead>
-<tr>
-<th>要点</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>授权限制</strong></td>
-<td>公司章程或者股东会可以授权董事会在<strong>3年内</strong>决定发行不超过已发行股份**50%**的股份</td>
-</tr>
-<tr>
-<td><strong>非货币出资</strong></td>
-<td>以非货币财产作价出资的应当经<strong>股东会决议</strong></td>
-</tr>
-<tr>
-<td><strong>董事会决议</strong></td>
-<td>应当经全体董事<strong>2/3以上</strong>通过</td>
-</tr>
-<tr>
-<td><strong>修改章程</strong></td>
-<td>公司注册资本、已发行股份数发生变化的，对公司章程该项记载事项的修改<strong>不需再由股东会表决</strong></td>
-</tr>
-</tbody>
-</table></div><p><strong>类别股</strong></p>
-<div class="table-wrapper"><table><thead>
-<tr>
-<th>类别股类型</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>优先/劣后分配</strong></td>
-<td>优先或者劣后分配利润或者剩余财产的股份</td>
-</tr>
-<tr>
-<td><strong>表决权差异化</strong></td>
-<td>每一股的表决权数多于或者少于普通股的股份（公开发行股份的公司<strong>不得</strong>发行此种类别股，公开发行前已发行的除外）</td>
-</tr>
-<tr>
-<td><strong>转让受限</strong></td>
-<td>转让须经公司同意等转让受限的股份</td>
-</tr>
-<tr>
-<td><strong>其他</strong></td>
-<td>国务院规定的其他类别股</td>
-</tr>
-</tbody>
-</table></div><blockquote>
-<p>▲ <strong>表决权限制</strong>：对于<strong>监事或者审计委员会成员</strong>的选举和更换，表决权差异化类别股与普通股每一股的表决权数<strong>相同</strong>。</p>
-</blockquote>
-<blockquote>
-<p>▲ <strong>特别事项的双层表决</strong>：发行类别股的公司，若涉及股东会特别事项等可能影响类别股股东权利的，除应当经股东会决议外，还应当经出席<strong>类别股股东会议</strong>的股东所持表决权的<strong>2/3以上</strong>通过。</p>
-</blockquote>
-<h3 id="四-股份的转让">（四）股份的转让</h3>
-<h4 id="1-转让场所">1. 转让场所</h4>
-<p>股东转让其股份，应当在 <strong>依法设立的证券交易场所</strong> 进行，或者按照国务院规定的其他方式进行（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC158%E6%9D%A1">《公司法》第158条</a>）。</p>
-<h4 id="2-转让限制">2. ◆ 转让限制</h4>
-<p>◆ <strong>发起人锁定期</strong>：发起人持有的本公司股份，自公司成立之日起 <strong>一年内</strong> 不得转让（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC159%E6%9D%A1">《公司法》第159条</a>）。</p>
-<p>◆ <strong>董监高持股转让限制</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC160%E6%9D%A1">《公司法》第160条</a>）：</p>
-<div class="table-wrapper"><table><thead>
-<tr>
-<th>限制类型</th>
-<th>具体内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>锁定期</td>
-<td>公司公开发行股份前已发行的股份，自公司股票在证券交易所上市交易之日起 <strong>一年内</strong> 不得转让</td>
-</tr>
-<tr>
-<td>任职期间限制</td>
-<td>董事、监事、高级管理人员在任职期间每年转让的股份不得超过其所持本公司股份总数的 <strong>25%</strong></td>
-</tr>
-<tr>
-<td>离职限制</td>
-<td>自公司股票上市交易之日起 <strong>一年内</strong> 不得转让；离职后 <strong>半年内</strong> 不得转让</td>
-</tr>
-<tr>
-<td>章程限制</td>
-<td>公司章程可以对董监高转让其所持有的本公司股份作出其他限制性规定</td>
-</tr>
-</tbody>
-</table></div><h4 id="3-公司收购本公司股份">3. 公司收购本公司股份</h4>
-<p>◆ <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC162%E6%9D%A1">《公司法》第162条</a>规定了公司可以收购本公司股份的法定情形：</p>
-<ol>
-<li><strong>减少公司注册资本</strong>——应当自收购之日起 <strong>十日内</strong> 注销</li>
-<li><strong>与持有本公司股份的其他公司合并</strong>——应当在 <strong>六个月内</strong> 转让或者注销</li>
-<li><strong>将股份用于员工持股计划或者股权激励</strong>——公司合计持有的本公司股份数不得超过已发行股份总额的 <strong>10%</strong>，并应当在 <strong>三年内</strong> 转让或者注销</li>
-<li><strong>股东因对股东大会作出的公司合并、分立决议持异议，要求公司收购其股份</strong>——应当在 <strong>六个月内</strong> 转让或者注销</li>
-<li><strong>将股份用于转换上市公司发行的可转换为股票的公司债券</strong></li>
-<li><strong>上市公司为维护公司价值及股东权益所必需</strong></li>
-</ol>
-<blockquote>
-<p>▲ 公司不得接受本公司的股份作为质权的标的。公司持有的本公司股份<strong>没有表决权</strong>。</p>
-</blockquote>
-<p><strong>禁止财务资助</strong></p>
-<div class="table-wrapper"><table><thead>
-<tr>
-<th>要点</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>原则</strong></td>
-<td>公司<strong>不得</strong>为他人取得本公司或者其母公司的股份提供赠与、借款、担保以及其他财务资助</td>
-</tr>
-<tr>
-<td><strong>例外一</strong></td>
-<td>公司实施<strong>员工持股计划</strong>的</td>
-</tr>
-<tr>
-<td><strong>例外二</strong></td>
-<td>①目的：为公司利益；②程序：经股东会决议，或者董事会按照公司章程或者股东会的授权作出决议（经全体董事的<strong>2/3以上</strong>通过）；③上限：财务资助的累计总额不得超过已发行股本总额的<strong>10%</strong></td>
-</tr>
-<tr>
-<td><strong>责任</strong></td>
-<td>给公司造成损失的，负有责任的董事、监事、高级管理人员应当承担<strong>赔偿责任</strong></td>
-</tr>
-</tbody>
-</table></div><h3 id="五-股份公司组织机构">（五）◆ 股份公司组织机构</h3>
+<hr>
+<h3 id="三-股份公司组织机构">（三）◆ 股份公司组织机构</h3>
 <h4 id="1-股东大会">1. 股东大会</h4>
 <p>股东大会是公司的权力机构，分为 <strong>年会</strong> 和 <strong>临时会议</strong>。</p>
 <div class="table-wrapper"><table><thead>
@@ -300,74 +163,427 @@
 <blockquote>
 <p>○ <strong>股东请求召开临时股东会</strong>：单独或者合计持有公司10%以上股份的股东请求召开临时股东会会议的，董事会、监事会应当在收到请求之日起<strong>10日内</strong>作出是否召开临时股东会会议的决定，并书面答复股东。</p>
 </blockquote>
-<p>股东大会作出决议，应当经出席会议的股东所持表决权 <strong>过半数</strong> 通过。但修改公司章程、增减注册资本、合并、分立、解散或者变更公司形式等重大事项，须经出席会议的股东所持表决权的 <strong>三分之二以上</strong> 通过（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC116%E6%9D%A1">《公司法》第116条</a>）。</p>
-<h4 id="2-董事会">2. 董事会</h4>
-<p>股份公司设董事会，成员为 <strong>5人至19人</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC108%E6%9D%A1">《公司法》第108条</a>）。董事会设董事长一人，可以设副董事长。</p>
-<p>与<a href="/gongsi-kb/articles/%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8/">有限责任公司</a>相比，股份公司董事会人数下限更高，体现了对公司治理规范性的更高要求。</p>
-<blockquote>
-<p>○ <strong>股份公司董事会特殊规则</strong>：</p>
+<p><strong>表决规则</strong></p>
 <ul>
-<li>董事长、副董事长由<strong>全体董事过半数</strong>选举产生</li>
-<li>会期：每年至少召开<strong>2次</strong>，召开前<strong>10日</strong>通知全体董事和监事</li>
-<li>临时会议提议权：代表<strong>1/10以上</strong>表决权的股东、<strong>1/3以上</strong>的董事、监事会</li>
-<li>董事因故不能出席，可以<strong>书面委托其他董事</strong>代为出席，委托书中应载明授权范围</li>
-<li><strong>责任承担</strong>：董事会的决议违反法律、行政法规或者公司章程、股东会决议，致使公司遭受严重损失的，参与决议的董事对公司负<strong>赔偿责任</strong></li>
-<li><strong>免责</strong>：经证明在表决时曾表明异议，并且其异议记载于会议记录的，该董事可以<strong>免除责任</strong></li>
+<li><strong>表决权</strong>：股东出席股东会会议，所持每一股份有一表决权，类别股股东除外。股东可以委托代理人出席股东会会议。公司持有的本公司股份没有表决权（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC116%E6%9D%A1">《公司法》第116条</a>）。</li>
+<li><strong>累积投票制</strong>：股东会选举董事或者监事时，每一股份拥有与应选董事或者监事人数相同的表决权，股东拥有的表决权可以<strong>集中使用</strong>。意义在于限制大股东对董监事选举的控制与操纵，保护中小股东利益。</li>
+</ul>
+<blockquote>
+<p><strong>举例：天际股份公司的累积投票</strong></p>
+<p>天际股份公司要选出5名董事，公司股份共1000股，股东共10人。甲是第一大股东，持有510股（51%），张三等其余9名股东共计持有490股（49%）。</p>
+<ul>
+<li><strong>若采取资本多数决</strong>：甲一股独大（已达到过半数表决权），其他股东均无法影响选举结果。最终所选出的5名董事全部是甲所中意的人选。</li>
+<li><strong>若采取累积投票制</strong>：因为要选出5名董事，表决权总数 = 1000股 × 5人 = 5000票。甲拥有 510 × 5 = 2550票，张三等合计拥有 490 × 5 = 2450票。甲为使更多代言人当选，会将投票权分散在5名候选人身上，每个候选人平均得票510票。理论上，张三等小股东联合起来集中使用投票权，可以选出<strong>2名</strong>利益代言人成为董事。</li>
 </ul>
 </blockquote>
-<p><strong>累积投票制</strong>（了解）</p>
-<p>累积投票制，是指股东会选举董事或者监事时，每一股份拥有与应选董事或者监事人数相同的表决权，股东拥有的表决权可以<strong>集中使用</strong>。股东会选举董事、监事，可以依照公司章程的规定或者股东会的决议，实行累积投票制。</p>
-<blockquote>
-<p>○ <strong>法理意义</strong>：累积投票制的意义在于限制大股东或控股股东对董事、监事选举过程的控制与操纵，保护中小股东的利益。</p>
-</blockquote>
-<p><strong>临时提案</strong></p>
+<p>股东大会作出决议，应当经出席会议的股东所持表决权 <strong>过半数</strong> 通过。但修改公司章程、增减注册资本、合并、分立、解散或者变更公司形式等重大事项，须经出席会议的股东所持表决权的 <strong>三分之二以上</strong> 通过。</p>
+<p><strong>临时提案</strong>：</p>
 <ul>
 <li>单独或者合计持有公司<strong>1%以上</strong>股份的股东，可以在股东会召开<strong>10日前</strong>提出临时提案并书面提交董事会。公司<strong>不得</strong>提高提出临时提案股东的持股比例。</li>
 <li>董事会应当在收到提案后<strong>2日内</strong>通知其他股东，并将该临时提案提交股东会审议。但临时提案违反法律、行政法规或者公司章程的规定，或者不属于股东会职权范围的除外。</li>
 <li>公开发行股份的公司，应当以<strong>公告方式</strong>作出上述通知。</li>
 </ul>
-<h4 id="3-监事会或审计委员会">3. 监事会或审计委员会</h4>
-<p>◆ 新公司法允许股份公司在董事会中设置 <strong>审计委员会</strong>，行使监事会的职权，从而可以不设监事会或者监事（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC121%E6%9D%A1">《公司法》第121条</a>）。审计委员会成员为 <strong>三名以上</strong>，过半数成员不得在公司担任除董事以外的其他职务，且不得与公司存在任何可能影响其独立客观判断的关系。</p>
-<h4 id="4-上市公司特别规定">4. 上市公司特别规定</h4>
+<blockquote>
+<p><strong>有限公司与股份公司的股东会制度对比</strong></p>
 <div class="table-wrapper"><table><thead>
 <tr>
-<th>特别制度</th>
+<th>对比项</th>
+<th>有限公司</th>
+<th>股份公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>定期会议</strong></td>
+<td>章程规定</td>
+<td>每年1次</td>
+</tr>
+<tr>
+<td><strong>临时会议</strong></td>
+<td>以下主体可提议：代表1/10以上表决权的股东、1/3以上董事、监事会</td>
+<td>以下情形应在2个月内召开：董事人数不足法定或章程人数的2/3；亏损达股本总额1/3；持股10%以上股东请求；董事会认为必要；监事会提议</td>
+</tr>
+<tr>
+<td><strong>召集主持</strong></td>
+<td>①董事会 → ②监事会 → ③代表1/10以上表决权的股东</td>
+<td>①董事会 → ②监事会 → ③连续90日以上+持股10%以上的股东</td>
+</tr>
+<tr>
+<td><strong>表决权</strong></td>
+<td>按出资比例（章程另有规定除外）</td>
+<td>所持每一股份有一表决权</td>
+</tr>
+<tr>
+<td><strong>一般表决</strong></td>
+<td>经代表过半数表决权的股东通过</td>
+<td>经出席会议股东所持表决权<strong>过半数</strong>通过</td>
+</tr>
+<tr>
+<td><strong>特别表决</strong></td>
+<td>经代表2/3以上表决权的股东通过</td>
+<td>经出席会议股东所持表决权的<strong>2/3以上</strong>通过</td>
+</tr>
+</tbody>
+</table></div></blockquote>
+<h4 id="2-董事会">2. 董事会</h4>
+<p>◆ 股份公司设董事会，成员为 <strong>3人以上</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC120%E6%9D%A1">《公司法》第120条</a>）。</p>
+<p><strong>董事会特殊规则：</strong></p>
+<div class="table-wrapper"><table><thead>
+<tr>
+<th>要点</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>董事长产生</strong></td>
+<td>董事长、副董事长由<strong>全体董事过半数</strong>选举产生</td>
+</tr>
+<tr>
+<td><strong>会期</strong></td>
+<td>每年至少召开<strong>2次</strong>，召开前<strong>10日</strong>通知全体董事和监事</td>
+</tr>
+<tr>
+<td><strong>临时会议提议权</strong></td>
+<td>代表<strong>1/10以上</strong>表决权的股东、<strong>1/3以上</strong>的董事、监事会</td>
+</tr>
+<tr>
+<td><strong>出席与表决</strong></td>
+<td>董事会会议应有过半数的董事出席方可举行；作出决议应经全体董事的<strong>过半数</strong>通过；<strong>1人1票</strong></td>
+</tr>
+<tr>
+<td><strong>委托出席</strong></td>
+<td>董事因故不能出席，可以<strong>书面委托其他董事</strong>代为出席，委托书中应载明授权范围</td>
+</tr>
+<tr>
+<td><strong>责任承担</strong></td>
+<td>董事会的决议违反法律、行政法规或者公司章程、股东会决议，致使公司遭受严重损失的，参与决议的董事对公司负<strong>赔偿责任</strong></td>
+</tr>
+<tr>
+<td><strong>免责</strong></td>
+<td>经证明在表决时曾表明异议，并且其异议记载于会议记录的，该董事可以<strong>免除责任</strong></td>
+</tr>
+</tbody>
+</table></div><h4 id="3-审计委员会">3. 审计委员会</h4>
+<p>◆ 新公司法允许股份公司在董事会中设置 <strong>审计委员会</strong>，行使监事会的职权，从而可以不设监事会或者监事（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC121%E6%9D%A1">《公司法》第121条</a>）。</p>
+<div class="table-wrapper"><table><thead>
+<tr>
+<th>要点</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>成员人数</strong></td>
+<td><strong>3人以上</strong></td>
+</tr>
+<tr>
+<td><strong>独立性要求</strong></td>
+<td>过半数成员不得在公司担任除董事以外的其他职务，且不得与公司存在任何可能影响其独立客观判断的关系</td>
+</tr>
+<tr>
+<td><strong>职工代表</strong></td>
+<td>公司董事会成员中的职工代表可以成为审计委员会成员</td>
+</tr>
+<tr>
+<td><strong>会议程序</strong></td>
+<td>审计委员会作出决议，应当经审计委员会成员的<strong>过半数</strong>通过；表决应当<strong>1人1票</strong></td>
+</tr>
+</tbody>
+</table></div><h4 id="4-监事会">4. 监事会</h4>
+<p>股份公司监事会与有限公司监事会职权相同，但更加规范。</p>
+<div class="table-wrapper"><table><thead>
+<tr>
+<th>对比项</th>
+<th>有限公司</th>
+<th>股份公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>简化制度</td>
+<td>股东人数较少或规模较小时，可不设监事会，只设1名监事；经全体股东一致同意可不设监事</td>
+<td>—</td>
+</tr>
+<tr>
+<td>人数</td>
+<td>3人以上</td>
+<td>3人以上</td>
+</tr>
+<tr>
+<td>副主席</td>
+<td>无规定</td>
+<td>可设监事会副主席</td>
+</tr>
+<tr>
+<td>召集主持</td>
+<td>监事会主席 → 过半数监事推举</td>
+<td>监事会主席 → 副主席 → 过半数监事推举</td>
+</tr>
+<tr>
+<td>会期</td>
+<td>每年至少1次</td>
+<td>每<strong>6个月</strong>至少召开1次</td>
+</tr>
+<tr>
+<td>议事方式和表决程序</td>
+<td>监事会决议应当经<strong>过半数</strong>监事通过；出席会议的监事应在会议记录上签名；其他事项由章程规定</td>
+<td>同左</td>
+</tr>
+<tr>
+<td>任期</td>
+<td>每届3年，连选可以连任</td>
+<td>每届3年，连选可以连任</td>
+</tr>
+<tr>
+<td>兼任限制</td>
+<td>董事、高管不得兼任监事</td>
+<td>董事、高管不得兼任监事</td>
+</tr>
+</tbody>
+</table></div><blockquote>
+<p>○ 监事任期届满未及时改选，或者监事在任期内辞任导致监事会成员低于法定人数（＜3人）的，在新监事就任前，原监事仍应当履行监事职务。</p>
+</blockquote>
+<hr>
+<h3 id="四-股份发行与转让">（四）◆ 股份发行与转让</h3>
+<h4 id="1-面额股与无面额股">1. 面额股与无面额股</h4>
+<p>◆ <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC142%E6%9D%A1">《公司法》第142条</a>规定：公司发行的股票，可以为 <strong>面额股</strong>，也可以为 <strong>无面额股</strong>。</p>
+<div class="table-wrapper"><table><thead>
+<tr>
+<th>类型</th>
+<th>面额股</th>
+<th>无面额股</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>定义</td>
+<td>股票上标明票面金额，每1股金额相等</td>
+<td>股票上不标明票面金额，只标明股份数量或占总股本的比例</td>
+</tr>
+<tr>
+<td>发行价格</td>
+<td>可以超过或等于票面金额，但<strong>不得低于</strong>票面金额</td>
+<td>不再受&quot;票面金额&quot;制约，可以根据实际情况低价发行</td>
+</tr>
+</tbody>
+</table></div><p><strong>关键规则：</strong></p>
+<ul>
+<li><strong>择一采用</strong>：公司的全部股份，根据公司章程的规定择一采用面额股或者无面额股，二者不能并存。</li>
+<li><strong>相互转换</strong>：公司可以根据公司章程的规定将已发行的面额股全部转换为无面额股，或者将无面额股全部转换为面额股。</li>
+<li><strong>财务处理</strong>：发行无面额股的，应当将发行股份所得股款的 <strong>二分之一以上</strong> 计入注册资本，其余部分计入资本公积金。</li>
+</ul>
+<blockquote>
+<p><strong>无面额股的实务价值</strong></p>
+<p>A股份有限公司经营不善，陷入危机。甲公司拥有强大的网络流量，能够为A公司赋能。A公司拟增发股份，引入甲公司作为战略投资者。</p>
+<ul>
+<li><strong>若发行面额股</strong>：根据法律规定，发行价格不得低于股票面值（1元/股）。但甲公司认为价格过高，导致交易最终难以达成，A公司融资失败。</li>
+<li><strong>若发行无面额股</strong>：不受&quot;不得低于面值&quot;的限制，双方可商定A公司向甲公司发行1亿股无面额股，发行价为0.1元/股，A公司便能顺利融资，成功引入甲公司作为战略投资者。</li>
+</ul>
+</blockquote>
+<h4 id="2-股票的发行规则">2. 股票的发行规则</h4>
+<ul>
+<li><strong>设立发行</strong>：公司设立时首次发行股份。</li>
+<li><strong>增资发行</strong>：公司成立后为增加资本而发行新股。</li>
+</ul>
+<p>公司公开发行股份，应当符合《证券法》等法律、行政法规规定的条件，并经国务院证券监督管理机构或者国务院授权的部门注册。</p>
+<p><strong>发行规则</strong>：股票的发行，实行公平、公正的原则，同类别的每一股份应当具有同等权利。同次发行的同类别股份，每股的发行条件和价格应当相同；认购人所认购的股份，每股应当支付相同价额。</p>
+<h4 id="3-类别股">3. 类别股</h4>
+<div class="table-wrapper"><table><thead>
+<tr>
+<th>类别股类型</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>优先/劣后分配</strong></td>
+<td>优先或者劣后分配利润或者剩余财产的股份</td>
+</tr>
+<tr>
+<td><strong>表决权差异化</strong></td>
+<td>每一股的表决权数多于或者少于普通股的股份（公开发行股份的公司<strong>不得</strong>发行此种类别股，公开发行前已发行的除外）</td>
+</tr>
+<tr>
+<td><strong>转让受限</strong></td>
+<td>转让须经公司同意等转让受限的股份</td>
+</tr>
+<tr>
+<td><strong>其他</strong></td>
+<td>国务院规定的其他类别股</td>
+</tr>
+</tbody>
+</table></div><p><strong>章程记载事项</strong>：发行类别股的公司，应当在公司章程中载明：①类别股分配利润或者剩余财产的顺序；②类别股的表决权数；③类别股的转让限制；④保护中小股东权益的措施；⑤股东会认为需要规定的其他事项。</p>
+<blockquote>
+<p>▲ <strong>表决权限制</strong>：对于<strong>监事或者审计委员会成员</strong>的选举和更换，表决权差异化类别股与普通股每一股的表决权数<strong>相同</strong>。</p>
+</blockquote>
+<blockquote>
+<p>▲ <strong>特别事项的双层表决</strong>：发行类别股的公司，若涉及股东会特别事项等可能影响类别股股东权利的，除应当经股东会决议外，还应当经出席<strong>类别股股东会议</strong>的股东所持表决权的<strong>2/3以上</strong>通过。公司章程可以对须经类别股股东会议决议的其他事项作出规定。</p>
+</blockquote>
+<blockquote>
+<p><strong>类别股双层表决的实务应用</strong></p>
+<p>A股份公司共发行普通股1000万股，优先股200万股（优先进行利润分配，一般情况下不享有表决权）。现A公司拟与B公司合并，则该合并决议须经<strong>两次独立表决</strong>：</p>
+<ol>
+<li><strong>股东会决议</strong>：由全体股东表决，须经出席会议的股东所持表决权的2/3以上通过；</li>
+<li><strong>类别股股东会议决议</strong>：由优先股股东单独表决，须经出席会议的优先股股东所持表决权的2/3以上通过。</li>
+</ol>
+</blockquote>
+<h4 id="4-授权资本制-新公司法重大变化">4. ◆ 授权资本制（新公司法重大变化）</h4>
+<p>2023年《公司法》修订，在股份公司中引入了&quot;有限的授权资本制&quot;：</p>
+<div class="table-wrapper"><table><thead>
+<tr>
+<th>要点</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>授权限制</strong></td>
+<td>公司章程或者股东会可以授权董事会在<strong>3年内</strong>决定发行不超过已发行股份**50%**的股份</td>
+</tr>
+<tr>
+<td><strong>非货币出资</strong></td>
+<td>以非货币财产作价出资的应当经<strong>股东会决议</strong></td>
+</tr>
+<tr>
+<td><strong>董事会决议</strong></td>
+<td>应当经全体董事<strong>2/3以上</strong>通过</td>
+</tr>
+<tr>
+<td><strong>修改章程</strong></td>
+<td>公司注册资本、已发行股份数发生变化的，对公司章程该项记载事项的修改<strong>不需再由股东会表决</strong></td>
+</tr>
+</tbody>
+</table></div><blockquote>
+<p>▲ <strong>实务要点</strong>：授权资本制的引入意味着股份公司增发股份不再必须经股东会决议，董事会在授权范围内即可决定，大幅提升了公司融资效率。但以非货币财产出资的，仍须经股东会决议，以保护股东利益。</p>
+</blockquote>
+<h4 id="5-股份的转让">5. 股份的转让</h4>
+<p><strong>（1）转让原则</strong></p>
+<p>因股份公司以资合性为主，所以股份转让<strong>不区分对内转让还是对外转让，均不受限制</strong>，原股东无优先购买权。但公司章程对股份转让有限制的，其转让按照公司章程的规定进行。</p>
+<p>股东转让其股份，应当在 <strong>依法设立的证券交易场所</strong> 进行，或者按照国务院规定的其他方式进行（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC158%E6%9D%A1">《公司法》第158条</a>）。</p>
+<p><strong>（2）◆ 转让限制</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC160%E6%9D%A1">《公司法》第160条</a>）</p>
+<div class="table-wrapper"><table><thead>
+<tr>
+<th>限制对象</th>
 <th>具体内容</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>独立董事</td>
-<td>上市公司设独立董事，独立董事不得由与公司存在利害关系的人员担任（第136条）</td>
+<td><strong>原始股东（含发起人）</strong></td>
+<td>公司公开发行股份前已发行的股份，自公司股票在证券交易所上市交易之日起 <strong>一年内</strong> 不得转让</td>
 </tr>
 <tr>
-<td>关联董事回避</td>
-<td>董事与董事会会议决议事项所涉及的企业有关联关系的，不得对该项决议行使表决权（第139条）</td>
+<td><strong>董监高</strong></td>
+<td>①应当向公司申报所持有的本公司的股份及其变动情况；②在就任时确定的任职期间内每年转让的股份不得超过其所持本公司股份总数的 <strong>25%</strong>；③所持本公司股份自公司股票上市交易之日起 <strong>一年内</strong> 不得转让；④离职后 <strong>半年内</strong> 不得转让；⑤公司章程可以作出其他限制性规定</td>
 </tr>
 <tr>
-<td>信息披露</td>
-<td>上市公司应当依照法律、行政法规的规定披露定期报告和临时报告（第140条）</td>
-</tr>
-<tr>
-<td>财务公开</td>
-<td>上市公司在每会计年度内半年公布一次财务会计报告</td>
+<td><strong>质权限制</strong></td>
+<td>股份在法律、行政法规规定的限制转让期限内出质的，质权人不得在限制转让期限内行使质权</td>
 </tr>
 </tbody>
-</table></div><h3 id="六-上市公司">（六）上市公司</h3>
-<h4 id="1-上市条件">1. 上市条件</h4>
-<p>股份有限公司申请股票上市，应当符合下列条件（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC133%E6%9D%A1">《公司法》第133条</a>）：</p>
-<ul>
-<li>股票经国务院证券监督管理机构核准已公开发行</li>
-<li>公司股本总额不少于人民币 <strong>3000万元</strong></li>
-<li>公开发行的股份达到公司股份总数的 <strong>25%以上</strong>；公司股本总额超过人民币4亿元的，公开发行股份的比例为 <strong>10%以上</strong></li>
-<li>公司最近三年无重大违法行为，财务会计报告无虚假记载</li>
-</ul>
-<h4 id="2-信息披露义务">2. 信息披露义务</h4>
-<p>上市公司应当真实、准确、完整、及时、公平地披露信息，不得有虚假记载、误导性陈述或者重大遗漏。</p>
-<h4 id="3-特别表决事项">3. 特别表决事项</h4>
-<p>上市公司在一年内购买、出售重大资产或者担保金额超过公司资产总额 <strong>30%</strong> 的，应当由股东大会作出决议，并经出席会议的股东所持表决权的 <strong>三分之二以上</strong> 通过（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC135%E6%9D%A1">《公司法》第135条</a>）。</p>
-<h4 id="4-上市公司董事会特殊规则">4. 上市公司董事会特殊规则</h4>
-<p><strong>（1）独立董事</strong>（了解）</p>
+</table></div><p><strong>（3）◆ 公司收购本公司股份</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC162%E6%9D%A1">《公司法》第162条</a>）</p>
+<div class="table-wrapper"><table><thead>
+<tr>
+<th>情形</th>
+<th>决议机构</th>
+<th>处理方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>减少公司注册资本</strong></td>
+<td>股东会</td>
+<td>应当自收购之日起 <strong>十日内</strong> 注销</td>
+</tr>
+<tr>
+<td><strong>与持有本公司股份的其他公司合并</strong></td>
+<td>股东会</td>
+<td>应当在 <strong>六个月内</strong> 转让或者注销</td>
+</tr>
+<tr>
+<td><strong>股东对合并、分立决议持异议</strong></td>
+<td>—</td>
+<td>应当在 <strong>六个月内</strong> 转让或者注销</td>
+</tr>
+<tr>
+<td><strong>员工持股计划或股权激励</strong></td>
+<td>董事会（2/3以上出席）</td>
+<td>合计不超过已发行股份总额的 <strong>10%</strong>，在 <strong>三年内</strong> 转让或注销；上市公司须通过公开集中交易方式进行</td>
+</tr>
+<tr>
+<td><strong>转换可转换为股票的公司债券</strong></td>
+<td>董事会（2/3以上出席）</td>
+<td>合计不超过已发行股份总额的 <strong>10%</strong>，在 <strong>三年内</strong> 转让或注销</td>
+</tr>
+<tr>
+<td><strong>上市公司为维护公司价值及股东权益所必需</strong></td>
+<td>董事会（2/3以上出席）</td>
+<td>合计不超过已发行股份总额的 <strong>10%</strong>，在 <strong>三年内</strong> 转让或注销</td>
+</tr>
+</tbody>
+</table></div><blockquote>
+<p>▲ 公司不得接受本公司的股份作为质权的标的。公司持有的本公司股份<strong>没有表决权</strong>。</p>
+</blockquote>
+<p><strong>（4）◆ 异议股东回购请求权</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC161%E6%9D%A1">《公司法》第161条</a>）</p>
+<blockquote>
+<p>○ <strong>适用限制</strong>：该制度<strong>不适用于</strong>公开发行股份的股份公司，仅适用于<strong>非公开发行股份的股份公司</strong>。</p>
+</blockquote>
+<p>有下列情形之一的，对股东会该项决议投反对票的股东可以请求公司按照合理的价格收购其股份：</p>
+<div class="table-wrapper"><table><thead>
+<tr>
+<th>情形</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>五年盈利，五年不分</strong></td>
+<td>公司连续5年不向股东分配利润，而公司该5年连续盈利，并且符合公司法规定的分配利润条件</td>
+</tr>
+<tr>
+<td><strong>转让主要财产</strong></td>
+<td>公司转让主要财产</td>
+</tr>
+<tr>
+<td><strong>修改章程使公司存续</strong></td>
+<td>公司章程规定的营业期限届满或者章程规定的其他解散事由出现，股东会通过决议修改章程使公司存续</td>
+</tr>
+</tbody>
+</table></div><p><strong>程序与时限</strong>：自股东会决议作出之日起<strong>60日内</strong>，股东与公司不能达成股份收购协议的，股东可以自股东会决议作出之日起<strong>90日内</strong>向人民法院提起诉讼（先协商，再诉讼）。</p>
+<p><strong>后续处理</strong>：所回购的股份，应当在<strong>6个月内</strong>依法转让或者注销。</p>
+<p><strong>（5）◆ 禁止财务资助</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC163%E6%9D%A1">《公司法》第163条</a>）</p>
+<div class="table-wrapper"><table><thead>
+<tr>
+<th>要点</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>原则</strong></td>
+<td>公司<strong>不得</strong>为他人取得本公司或者其母公司的股份提供赠与、借款、担保以及其他财务资助</td>
+</tr>
+<tr>
+<td><strong>例外一</strong></td>
+<td>公司实施<strong>员工持股计划</strong>的</td>
+</tr>
+<tr>
+<td><strong>例外二</strong></td>
+<td>①目的：为公司利益；②程序：经股东会决议，或者董事会按照公司章程或者股东会的授权作出决议（经全体董事的<strong>2/3以上</strong>通过）；③上限：财务资助的累计总额不得超过已发行股本总额的<strong>10%</strong></td>
+</tr>
+<tr>
+<td><strong>责任</strong></td>
+<td>给公司造成损失的，负有责任的董事、监事、高级管理人员应当承担<strong>赔偿责任</strong></td>
+</tr>
+</tbody>
+</table></div><hr>
+<h3 id="五-上市公司">（五）上市公司</h3>
+<p>上市公司，是指其股票在证券交易所上市交易的股份公司。与非上市公司相比，上市公司最大的特点是股票的高度流通性。</p>
+<h4 id="1-股东会特殊规则">1. 股东会特殊规则</h4>
+<p>上市公司在<strong>1年内</strong>购买重大资产超过公司资产总额**30%<strong>的、出售重大资产、担保金额超过公司资产总额</strong>30%**的，应当由股东会作出决议，并经出席会议的股东所持表决权的 <strong>三分之二以上</strong> 通过。</p>
+<h4 id="2-董事会特殊规则">2. ◆ 董事会特殊规则</h4>
+<p><strong>（1）独立董事</strong></p>
 <div class="table-wrapper"><table><thead>
 <tr>
 <th>要点</th>
@@ -396,18 +612,29 @@
 <td>独立董事连续<strong>2次</strong>未能亲自出席董事会会议，也不委托其他独立董事代为出席的，董事会应当在该事实发生之日起<strong>30日内</strong>提议召开股东会解除该独立董事职务</td>
 </tr>
 </tbody>
-</table></div><p><strong>（2）关联董事回避制度</strong></p>
+</table></div><p><strong>不得担任独立董事的情形：</strong></p>
+<ol>
+<li>在上市公司或者其附属企业任职的人员及其配偶、父母、子女、主要社会关系</li>
+<li>直接或者间接持有上市公司已发行股份<strong>1%以上</strong>或者是上市公司前10名股东中的自然人股东及其配偶、父母、子女</li>
+<li>在直接或者间接持有上市公司已发行股份<strong>5%以上</strong>的股东或者在上市公司前5名股东任职的人员及其配偶、父母、子女</li>
+<li>在上市公司控股股东、实际控制人的附属企业任职的人员及其配偶、父母、子女</li>
+<li>与上市公司及其控股股东、实际控制人或者其各自的附属企业有重大业务往来的人员，或者在有重大业务往来的单位及其控股股东、实际控制人任职的人员</li>
+<li>为上市公司及其控股股东、实际控制人或者其各自附属企业提供财务、法律、咨询、保荐等服务的人员，包括但不限于提供服务的中介机构的项目组全体人员、各级复核人员、在报告上签字的人员、合伙人、董事、高级管理人员及主要负责人</li>
+<li>最近<strong>12个月内</strong>曾经具有第1项至第6项所列举情形的人员</li>
+<li>法律、行政法规、中国证监会规定、证券交易所业务规则和公司章程规定的不具备独立性的其他人员</li>
+</ol>
+<p><strong>（2）审计委员会</strong></p>
+<p>上市公司在董事会中设置审计委员会的，董事会对下列事项作出决议前应当经审计委员会全体成员<strong>过半数</strong>通过：①聘用、解聘承办公司审计业务的会计师事务所；②聘任、解聘财务负责人；③披露财务会计报告；④国务院证券监督管理机构规定的其他事项。</p>
+<p><strong>（3）董事会秘书</strong></p>
+<p>上市公司设立董事会秘书，负责公司股东会和董事会会议的筹备、文件保管以及公司股东资料的管理，办理信息披露事务等事宜。董事会秘书属于公司<strong>高级管理人员</strong>。</p>
+<p><strong>（4）关联董事回避制度</strong></p>
 <ul>
 <li>上市公司董事与董事会会议决议事项所涉及的企业或个人有关联关系的，该董事应当及时向董事会<strong>书面报告</strong>。有关联关系的董事<strong>不得</strong>对该项决议行使表决权，也<strong>不得</strong>代理其他董事行使表决权。</li>
 <li>该董事会会议由过半数的无关联关系董事出席即可举行，董事会会议所作决议须经无关联关系董事<strong>过半数</strong>通过。</li>
 <li>出席董事会的无关联关系董事人数<strong>不足3人</strong>的，应将该事项提交上市公司<strong>股东会</strong>审议。</li>
 </ul>
-<p><strong>（3）审计委员会</strong></p>
-<p>上市公司在董事会中设置审计委员会的，董事会对下列事项作出决议前应当经审计委员会全体成员<strong>过半数</strong>通过：①聘用、解聘承办公司审计业务的会计师事务所；②聘任、解聘财务负责人；③披露财务会计报告；④国务院证券监督管理机构规定的其他事项。</p>
-<p><strong>（4）董事会秘书</strong></p>
-<p>上市公司设立董事会秘书，负责公司股东会和董事会会议的筹备、文件保管以及公司股东资料的管理，办理信息披露事务等事宜。董事会秘书属于公司<strong>高级管理人员</strong>。</p>
 <p><strong>（5）上市公司股份代持协议无效</strong></p>
-<p>▲ 上市公司股份代持协议可能因违反证券法关于信息披露的强制性规定、损害公众投资者合法权益而被认定为<strong>无效</strong>。</p>
+<p>▲ 上市公司的股份代持协议因损害证券市场公开、公平、公正的交易秩序，损害不特定投资者的合法权益，应认定为无效。</p>
 <p><strong>（6）禁止交叉持股</strong></p>
 <div class="table-wrapper"><table><thead>
 <tr>
@@ -426,7 +653,78 @@
 </tr>
 </tbody>
 </table></div><hr>
-<h2 id="三-法条依据汇总">三、法条依据汇总</h2>
+<h2 id="三-实务案例">三、实务案例</h2>
+<h3 id="案例一-无面额股制度的灵活运用">案例一：无面额股制度的灵活运用</h3>
+<p><strong>【案情】</strong></p>
+<p>江松运输公司是一家股份有限公司，注册资本1000万元，全部为面额股（每股1元）。公司经营困难，需要引入战略投资者。投资人张某愿意以500万元认购公司新股，但要求以0.5元/股的价格获得1000万股。公司召开股东会讨论，有股东提出以下方案：A方案——维持面额股不变，以1元/股的价格向张某发行500万股；B方案——将全部面额股转换为无面额股，然后以0.5元/股向张某发行1000万股。</p>
+<p><strong>【法律分析】</strong></p>
+<ol>
+<li><strong>面额股的限制</strong>：面额股的发行价格可以超过或等于票面金额，但<strong>不得低于</strong>票面金额。若维持面额股，张某只能以不低于1元/股的价格认购。</li>
+<li><strong>无面额股的灵活性</strong>：发行无面额股不受&quot;不得低于面值&quot;的限制，发行价格由市场供需和双方协商决定。B方案下，张某可以0.5元/股认购。</li>
+<li><strong>择一采用规则</strong>：公司的全部股份应择一采用面额股或无面额股，不能同时存在两种形式（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC142%E6%9D%A1">《公司法》第142条</a>）。因此若转换为无面额股，既有的面额股<strong>应当全部转为无面额股</strong>。</li>
+<li><strong>财务处理</strong>：发行无面额股所募集的股款，<strong>1/2以上</strong>计入注册资本，其余计入资本公积金。张某认购1000万股，每股0.5元，合计500万元。其中至少250万元计入注册资本，其余250万元计入资本公积金。</li>
+</ol>
+<p><strong>【实务要点】</strong>
+面额股与无面额股只能择一采用，不得并存；无面额股突破了&quot;不得低于面值&quot;的限制，为公司引入低价战略投资者提供了制度空间。</p>
+<p><strong>【实务启示】</strong>
+▲ （1）公司经营困难需要引入外部投资时，无面额股制度可以有效降低融资门槛，避免因面值限制导致交易无法达成。（2）转换为无面额股需要修改章程，应当提前做好股东沟通工作。（3）发行无面额股时注意1/2以上计入注册资本的财务处理要求，避免资本公积金计算错误。</p>
+<h3 id="案例二-类别股的差异化表决权安排">案例二：类别股的差异化表决权安排</h3>
+<p><strong>【案情】</strong></p>
+<p>黎明公司是一家非上市的股份公司，为了筹集资金、改善公司的股权结构，拟发行表决权大于普通股的类别股。公司就此事召开股东会讨论，有股东提出以下疑问：是否需要修改章程？增选董事、监事时该类别股的表决权是否大于普通股？公司正在筹备上市，是否还能发行此种类别股？</p>
+<p><strong>【法律分析】</strong></p>
+<ol>
+<li><strong>章程修改</strong>：发行类别股的公司应当在章程中载明类别股的表决权数以及保护中小股东权益的措施，因此<strong>须对章程进行修改</strong>。</li>
+<li><strong>增选董事时的表决权</strong>：若股份公司发行表决权多于或少于普通股的类别股，在选举<strong>监事或审计委员会成员</strong>时，该类别股与普通股每一股的表决权数<strong>相同</strong>。但在增选<strong>董事</strong>时，并无上述特别限制，该类别股的表决权<strong>大于</strong>普通股。</li>
+<li><strong>增选监事时的表决权</strong>：如上所述，选举监事时该类别股与普通股表决权<strong>相同</strong>，不得大于普通股。</li>
+<li><strong>拟上市公司能否发行</strong>：公开发行股份的公司不得发行表决权差异化类别股，但<strong>公开发行前已经发行的除外</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC142%E6%9D%A1">《公司法》第142条</a>参照）。黎明公司作为非上市公司，可以在公开发行前发行此种类别股。</li>
+</ol>
+<p><strong>【实务要点】</strong>
+表决权差异化类别股在选举监事/审计委员会成员时与普通股表决权相同，但在选举董事时不受此限制；公开发行前已发行的表决权差异化类别股在上市后可以保留。</p>
+<p><strong>【实务启示】</strong>
+▲ （1）拟上市公司如需设置差异化表决权结构，应在公开发行前完成发行并写入章程。（2）公司治理中应注意区分&quot;选举董事&quot;和&quot;选举监事&quot;两个场景下类别股表决权的差异，避免表决程序违法。（3）设置差异化表决权时应同步完善保护中小股东权益的措施，以满足章程记载要求。</p>
+<h3 id="案例三-股份公司上市初期的股份处置合规">案例三：股份公司上市初期的股份处置合规</h3>
+<p><strong>【案情】</strong></p>
+<p>甲股份有限公司于2025年6月在证券交易所上市。上市仅6个月后（2025年12月），公司董事会拟采取以下措施：(1) 允许公司董事、监事将所持股份全部对外转让；(2) 解除公开发行前已发行股份的转让限制；(3) 回购公司已发行股份总额的11%用于未来2年内的员工股权激励；(4) 与乙公司合作开发房地产项目，要求乙公司以其持有的甲公司股份提供质押担保。</p>
+<p><strong>【法律分析】</strong></p>
+<ol>
+<li><strong>董监高持股转让限制</strong>：股份公司董事、监事、高级管理人员所持本公司股份自公司股票上市交易之日起<strong>一年内不得转让</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC160%E6%9D%A1">《公司法》第160条</a>）。上市仅6个月，董监高股份尚在锁定期，<strong>不得转让</strong>。</li>
+<li><strong>原始股东锁定期</strong>：公司公开发行股份前已发行的股份，自公司股票上市交易之日起<strong>一年内不得转让</strong>。上市仅6个月，该等股份同样<strong>不得解除转让限制</strong>。</li>
+<li><strong>回购比例限制</strong>：为实施员工持股计划或股权激励而回购股份的，公司合计持有的本公司股份数不得超过已发行股份总额的<strong>10%</strong>，且回购后应在<strong>三年内</strong>转让或注销（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC162%E6%9D%A1">《公司法》第162条</a>）。回购11%<strong>超出法定上限</strong>。</li>
+<li><strong>禁止接受本公司股份质押</strong>：公司<strong>不得接受本公司的股份作为质权的标的</strong>。要求乙公司以甲公司股份提供质押担保，违反该禁止性规定。</li>
+</ol>
+<p><strong>【实务要点】</strong>
+上市公司董监高及原始股东均受一年锁定期约束；股份回购有比例上限（10%）和处置期限（三年）的双重限制；公司不得接受本公司股份作为质押标的。</p>
+<p><strong>【实务启示】</strong>
+▲ （1）上市公司应建立股份转让合规审查制度，在锁定期届满前对董监高及原始股东的转让行为进行前置审查。（2）股份回购方案设计时应严格控制在10%的比例上限内，避免方案因违法而被否决。（3）在接受质押物时，应核查质押标的是否属于本公司股份，避免因违反禁止性规定导致质权无法设立。</p>
+<h3 id="案例四-授权资本制下的新股发行决策">案例四：授权资本制下的新股发行决策</h3>
+<p><strong>【案情】</strong></p>
+<p>甲股份公司已发行1000万股（注册资本1000万元），股东会通过决议授权董事会在3年内决定发行新股。董事会拟向投资人乙发行新股600万股，以货币出资。</p>
+<p><strong>【法律分析】</strong></p>
+<ol>
+<li><strong>授权上限</strong>：公司章程或股东会可授权董事会在3年内发行不超过已发行股份50%的股份。甲公司已发行1000万股，授权上限为<strong>500万股</strong>，而非600万股。董事会决议发行600万股<strong>超出授权范围</strong>，应当经股东会决议。</li>
+<li><strong>董事会决议门槛</strong>：在授权范围内发行新股，应当经全体董事<strong>2/3以上</strong>通过。</li>
+<li><strong>非货币出资的特殊规则</strong>：若投资人以非货币财产（如土地使用权、知识产权）出资认购新股，则<strong>应当经股东会决议</strong>，董事会无权单独决定。</li>
+<li><strong>修改章程</strong>：注册资本和已发行股份数发生变化的，对公司章程的相应修改<strong>不需再由股东会单独表决</strong>。</li>
+</ol>
+<p><strong>【实务要点】</strong>
+授权资本制下董事会增发股份的权限上限为已发行股份的50%，超出部分须经股东会决议；以非货币财产出资认购新股不论是否在授权范围内均须经股东会决议。</p>
+<p><strong>【实务启示】</strong>
+▲ （1）公司在章程中设定授权资本制条款时，应充分考虑未来3年内的融资需求，合理设定授权上限。（2）董事会在授权范围内作出增发决议前，应严格审查是否涉及非货币出资，避免越权决议。（3）投资人以非货币财产认购新股的，公司应提前安排股东会决议程序，不能仅依赖董事会授权。</p>
+<h3 id="案例五-发起人锁期内转让股份的效力">案例五：发起人锁期内转让股份的效力</h3>
+<p><strong>【案情】</strong></p>
+<p>甲、乙、丙三人作为发起人，于2025年1月共同设立了A科技股份有限公司，注册资本5000万元，三人均以货币出资。2025年9月（公司成立后第8个月），甲因急需资金周转，将其持有的15%股份以协议方式转让给外部投资人丁，并收取了转让款300万元。乙和丙知悉后，认为甲的转让行为违反了锁定期规定，主张该转让行为无效，要求丁返还股份。</p>
+<p><strong>【法律分析】</strong></p>
+<ol>
+<li><strong>锁定期规定的性质</strong>：<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC160%E6%9D%A1">《公司法》第160条</a>规定公司公开发行股份前已发行的股份自上市交易之日起一年内不得转让。该规定的立法目的是维护公司设立的稳定性，防止发起人利用设立公司进行短期投机。</li>
+<li><strong>合同效力的判断</strong>：通说认为属于<strong>管理性强制规定</strong>——目的在于规范发起人的行为，而非否定转让行为本身的效力。因此，甲与丁之间的股份转让合同原则上<strong>有效</strong>。</li>
+<li><strong>法律后果</strong>：甲虽然违反了锁定期规定，但转让合同的效力不受影响。甲可能面临行政处罚，乙和丙可就甲的违约行为向公司主张损害赔偿。若丁为善意第三人，其合法权益应受保护。</li>
+</ol>
+<p><strong>【实务要点】</strong>
+股份公司发起人锁定期属于管理性强制规定，违反锁定期转让股份的合同原则上有效，但转让人需承担相应法律责任。</p>
+<p><strong>【实务启示】</strong>
+▲ （1）股份公司发起人应充分认识一年锁定期的法律约束，如确需在锁定期内变现，可以考虑股权质押融资等替代方案，而非直接转让。（2）投资人受让股份公司股份时，应核查公司成立时间及转让人是否仍在锁定期，防范合规风险。（3）公司章程可对发起人股份转让设置更长期限的限制，发起人在签署发起人协议时应予以关注。</p>
+<hr>
+<h2 id="四-法条依据汇总">四、法条依据汇总</h2>
 <div class="table-wrapper"><table><thead>
 <tr>
 <th>法条</th>
@@ -440,145 +738,67 @@
 </tr>
 <tr>
 <td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC93%E6%9D%A1">《公司法》第93条</a></td>
-<td>募集设立发起人认购不少于35%</td>
-</tr>
-<tr>
-<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC94%E6%9D%A1">《公司法》第94条</a></td>
-<td>发起人连带责任</td>
+<td>发起人承担筹办事务，签订发起人协议</td>
 </tr>
 <tr>
 <td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC96%E6%9D%A1">《公司法》第96条</a></td>
-<td>注册资本为已发行股份票面总额</td>
+<td>注册资本为已发行股份股本总额</td>
 </tr>
 <tr>
-<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC108%E6%9D%A1">《公司法》第108条</a></td>
-<td>董事会5-19人</td>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC97%E6%9D%A1">《公司法》第97条</a></td>
+<td>发起设立/募集设立，发起人认购不少于35%</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC98%E6%9D%A1">《公司法》第98条</a></td>
+<td>发起人应于公司成立前全额缴纳股款</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC99%E6%9D%A1">《公司法》第99条</a></td>
+<td>发起人出资不足的连带责任</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC107%E6%9D%A1">《公司法》第107条</a></td>
+<td>有限公司设立时股东责任条款适用于股份公司</td>
 </tr>
 <tr>
 <td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC116%E6%9D%A1">《公司法》第116条</a></td>
-<td>特别决议需2/3以上表决权通过</td>
+<td>表决权、一般决议过半数、特别决议2/3以上</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC120%E6%9D%A1">《公司法》第120条</a></td>
+<td>董事会3人以上</td>
 </tr>
 <tr>
 <td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC121%E6%9D%A1">《公司法》第121条</a></td>
-<td>审计委员会替代监事会</td>
-</tr>
-<tr>
-<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC133%E6%9D%A1">《公司法》第133条</a></td>
-<td>上市条件</td>
-</tr>
-<tr>
-<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC135%E6%9D%A1">《公司法》第135条</a></td>
-<td>上市公司重大资产交易特别表决</td>
-</tr>
-<tr>
-<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC136%E6%9D%A1">《公司法》第136条</a></td>
-<td>独立董事制度</td>
+<td>审计委员会替代监事会，3人以上，过半数通过</td>
 </tr>
 <tr>
 <td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC142%E6%9D%A1">《公司法》第142条</a></td>
-<td>面额股与无面额股</td>
-</tr>
-<tr>
-<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC151%E6%9D%A1">《公司法》第151条</a></td>
-<td>增资发行新股</td>
+<td>面额股与无面额股择一采用，1/2以上计入注册资本</td>
 </tr>
 <tr>
 <td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC158%E6%9D%A1">《公司法》第158条</a></td>
-<td>股份转让场所</td>
-</tr>
-<tr>
-<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC159%E6%9D%A1">《公司法》第159条</a></td>
-<td>发起人1年锁定期</td>
+<td>股份在证券交易场所转让</td>
 </tr>
 <tr>
 <td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC160%E6%9D%A1">《公司法》第160条</a></td>
-<td>董监高持股转让限制</td>
+<td>原始股东1年锁定期、董监高转让限制（25%/1年/半年）</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC161%E6%9D%A1">《公司法》第161条</a></td>
+<td>异议股东回购请求权（非公开发行公司适用）</td>
 </tr>
 <tr>
 <td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC162%E6%9D%A1">《公司法》第162条</a></td>
-<td>公司收购本公司股份</td>
+<td>公司收购本公司股份的6种情形及处理方式</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC163%E6%9D%A1">《公司法》第163条</a></td>
+<td>禁止财务资助（员工持股/10%上限例外）</td>
 </tr>
 </tbody>
 </table></div><hr>
-<h2 id="四-实务要点">四、实务要点</h2>
-<h3 id="1-新三板挂牌-vs-上市">1. ▲ 新三板挂牌 vs 上市</h3>
-<div class="table-wrapper"><table><thead>
-<tr>
-<th>对比项</th>
-<th>新三板（全国中小企业股份转让系统）</th>
-<th>证券交易所上市</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>法律定位</td>
-<td>非上市公众公司股权交易平台</td>
-<td>上市公司股票交易平台</td>
-</tr>
-<tr>
-<td>准入门槛</td>
-<td>相对较低，不设盈利要求</td>
-<td>较高，需满足股本总额、盈利等条件</td>
-</tr>
-<tr>
-<td>信息披露</td>
-<td>要求较低</td>
-<td>要求严格，定期报告+临时报告</td>
-</tr>
-<tr>
-<td>融资能力</td>
-<td>定向发行，融资规模有限</td>
-<td>公开发行，融资规模大</td>
-</tr>
-<tr>
-<td>监管强度</td>
-<td>相对宽松</td>
-<td>严格监管</td>
-</tr>
-</tbody>
-</table></div><p>▲ <strong>实务提示</strong>：新三板挂牌公司仍属于非上市公众公司，其股份转让、信息披露等规则与上市公司存在显著差异，不可混淆适用。</p>
-<h3 id="2-股份代持在股份公司中的效力">2. ▲ 股份代持在股份公司中的效力</h3>
-<p>▲ 股份代持（隐名持股）在股份公司中的法律效力问题较为复杂：</p>
-<ul>
-<li><strong>有限公司</strong>：代持协议原则上有效，隐名股东可依法请求确认股东身份。</li>
-<li><strong>股份公司，特别是上市公司</strong>：代持协议可能因违反证券法关于信息披露的强制性规定、损害公众投资者合法权益而被认定为 <strong>无效</strong>。</li>
-<li><strong>裁判趋势</strong>：法院倾向于认为上市公司股份代持协议因违反公序良俗而无效（参考最高人民法院相关裁判）。</li>
-</ul>
-<h3 id="3-上市公司收购">3. ▲ 上市公司收购</h3>
-<p>上市公司收购主要包括 <strong>要约收购</strong> 和 <strong>协议收购</strong> 两种方式：</p>
-<ul>
-<li><strong>要约收购</strong>：投资者持有一个上市公司已发行股份的 <strong>30%</strong> 时，继续进行收购的，应当依法向所有股东发出全面要约或者部分要约。</li>
-<li><strong>协议收购</strong>：收购人与被收购公司的股东达成股份转让协议。</li>
-</ul>
-<p>▲ 收购完成后，收购人持有的被收购上市公司的股票，在 <strong>十二个月内</strong> 不得转让。</p>
-<h3 id="4-内幕交易与市场操纵">4. ▲ 内幕交易与市场操纵</h3>
-<p>▲ 利用内幕信息进行证券交易，或者操纵证券市场，不仅面临行政处罚，还可能构成 <strong>刑事犯罪</strong>（《刑法》第180条、第182条）。知悉内幕信息的人员包括：发行人的董事、监事、高级管理人员；持有公司5%以上股份的股东及其董监高；因职务便利获取内幕信息的其他人员等。</p>
-<hr>
-<h2 id="五-案例分析">五、案例分析</h2>
-<h3 id="案例-发起人锁期内转让股份的效力认定">案例：发起人锁期内转让股份的效力认定</h3>
-<p><strong>【案情】</strong></p>
-<p>甲、乙、丙三人作为发起人，于2024年1月共同设立了A科技股份有限公司，注册资本5000万元，三人均以货币出资。2024年9月（公司成立后第8个月），甲因急需资金周转，将其持有的15%股份以协议方式转让给外部投资人丁，并收取了转让款300万元。乙和丙知悉后，认为甲的转让行为违反了<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC159%E6%9D%A1">《公司法》第159条</a>关于发起人一年锁定期的规定，主张该转让行为无效，要求丁返还股份。</p>
-<p><strong>【法律分析】</strong></p>
-<ol>
-<li>
-<p><strong>锁定期规定的性质</strong>：<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC159%E6%9D%A1">《公司法》第159条</a>规定发起人持有的本公司股份自公司成立之日起一年内不得转让。该规定的立法目的是维护公司设立的稳定性，防止发起人利用设立公司进行短期投机。</p>
-</li>
-<li>
-<p><strong>合同效力的判断</strong>：关于该规定属于效力性强制规定还是管理性强制规定，存在争议。通说认为属于<strong>管理性强制规定</strong>——目的在于规范发起人的行为，而非否定转让行为本身的效力。因此，甲与丁之间的股份转让合同原则上<strong>有效</strong>。</p>
-</li>
-<li>
-<p><strong>法律后果</strong>：甲虽然违反了锁定期规定，但转让合同的效力不受影响。甲可能面临行政处罚，乙和丙可就甲的违约行为向公司主张损害赔偿。若丁为善意第三人，其合法权益应受保护。</p>
-</li>
-<li>
-<p><strong>与有限公司的区别</strong>：有限公司股权转让受限主要是保护人合性；股份公司发起人锁定期则是维护公司设立稳定性，两者法理基础不同。</p>
-</li>
-</ol>
-<p><strong>【实务要点】</strong></p>
-<p>发起人违反一年锁定期转让股份的，转让合同原则上有效，但转让人应承担相应的法律责任。公司或其他发起人可就违反锁定期义务造成的损失请求损害赔偿。受让人是否取得股份，取决于股东名册和工商登记的变更情况。</p>
-<p><strong>【实务启示】</strong></p>
-<p>▲ 股份公司发起人应充分认识一年锁定期的法律约束。实务中如确需在锁定期内变现，可以考虑股权质押融资等替代方案，而非直接转让。投资人受让股份公司股份时，应核查公司成立时间及转让人是否仍在锁定期。</p>
-<hr>
-<h2 id="六-对比归纳-有限责任公司-vs-股份有限公司">六、对比归纳：有限责任公司 vs 股份有限公司</h2>
+<h2 id="五-对比归纳-有限责任公司-vs-股份有限公司">五、对比归纳：有限责任公司 vs 股份有限公司</h2>
 <div class="table-wrapper"><table><thead>
 <tr>
 <th>对比项</th>
@@ -595,7 +815,7 @@
 <tr>
 <td>股东人数</td>
 <td>1-50人</td>
-<td>2-200人发起人，无上限</td>
+<td>1-200人发起人，无上限</td>
 </tr>
 <tr>
 <td>资本形式</td>
@@ -608,14 +828,14 @@
 <td>股票</td>
 </tr>
 <tr>
-<td>股权转让</td>
+<td>股权/股份转让</td>
 <td>书面通知+优先购买权</td>
 <td>自由转让（受锁定期等限制）</td>
 </tr>
 <tr>
 <td>组织机构</td>
 <td>可不设董事会、监事会（规模较小）</td>
-<td>必须设董事会（5-19人）</td>
+<td>必须设董事会（3人以上）</td>
 </tr>
 <tr>
 <td>信息公开</td>
@@ -635,7 +855,7 @@
 <tr>
 <td>特别决议</td>
 <td>2/3以上表决权</td>
-<td>2/3以上出席会议表决权</td>
+<td>2/3以上<strong>出席会议</strong>表决权</td>
 </tr>
 <tr>
 <td>审计委员会</td>
@@ -645,13 +865,10 @@
 <tr>
 <td>面额股/无面额股</td>
 <td>无明确规定</td>
-<td>明确允许（第142条）</td>
+<td>明确允许（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC142%E6%9D%A1">第142条</a>）</td>
 </tr>
 </tbody>
-</table></div><blockquote>
-<p>相关章节：<a href="/gongsi-kb/articles/%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8/">有限责任公司</a> | <a href="/gongsi-kb/articles/%E5%9B%BD%E5%AE%B6%E5%87%BA%E8%B5%84%E5%85%AC%E5%8F%B8/">国家出资公司</a></p>
-</blockquote>
-<hr>
+</table></div><hr>
 <p><em>本章依据2024年7月1日施行的《中华人民共和国公司法》（2023年12月29日修订）编写。</em></p>
 </div> <div class="mt-12 border-t border-gray-200 dark:border-primary-800 pt-8" data-astro-cid-ligjhper> <h2 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4" data-astro-cid-ligjhper>📎 相关文章</h2> <div class="space-y-3" data-astro-cid-ligjhper> <a href="/gongsi-kb/articles/中华人民共和国公司法全文-2023年修订/" class="group flex items-start gap-3 bg-white dark:bg-primary-900 rounded-lg p-3 border border-gray-200 dark:border-primary-800 hover:border-accent-300 dark:hover:border-accent-600 transition-all" data-astro-cid-ligjhper> <div class="flex-1 min-w-0" data-astro-cid-ligjhper> <div class="text-xs text-gray-400 dark:text-gray-500 mb-1" data-astro-cid-ligjhper>法律全文</div> <div class="font-medium text-gray-800 dark:text-gray-200 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors" data-astro-cid-ligjhper>中华人民共和国公司法全文（2023年修订）</div> </div> </a><a href="/gongsi-kb/articles/公司法总览/" class="group flex items-start gap-3 bg-white dark:bg-primary-900 rounded-lg p-3 border border-gray-200 dark:border-primary-800 hover:border-accent-300 dark:hover:border-accent-600 transition-all" data-astro-cid-ligjhper> <div class="flex-1 min-w-0" data-astro-cid-ligjhper> <div class="text-xs text-gray-400 dark:text-gray-500 mb-1" data-astro-cid-ligjhper>总论</div> <div class="font-medium text-gray-800 dark:text-gray-200 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors" data-astro-cid-ligjhper>公司法总览</div> </div> </a><a href="/gongsi-kb/articles/公司法基础理论/" class="group flex items-start gap-3 bg-white dark:bg-primary-900 rounded-lg p-3 border border-gray-200 dark:border-primary-800 hover:border-accent-300 dark:hover:border-accent-600 transition-all" data-astro-cid-ligjhper> <div class="flex-1 min-w-0" data-astro-cid-ligjhper> <div class="text-xs text-gray-400 dark:text-gray-500 mb-1" data-astro-cid-ligjhper>总论</div> <div class="font-medium text-gray-800 dark:text-gray-200 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors" data-astro-cid-ligjhper>公司法基础理论</div> </div> </a><a href="/gongsi-kb/articles/公司的分类/" class="group flex items-start gap-3 bg-white dark:bg-primary-900 rounded-lg p-3 border border-gray-200 dark:border-primary-800 hover:border-accent-300 dark:hover:border-accent-600 transition-all" data-astro-cid-ligjhper> <div class="flex-1 min-w-0" data-astro-cid-ligjhper> <div class="text-xs text-gray-400 dark:text-gray-500 mb-1" data-astro-cid-ligjhper>总论</div> <div class="font-medium text-gray-800 dark:text-gray-200 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors" data-astro-cid-ligjhper>公司的分类</div> </div> </a><a href="/gongsi-kb/articles/公司的能力/" class="group flex items-start gap-3 bg-white dark:bg-primary-900 rounded-lg p-3 border border-gray-200 dark:border-primary-800 hover:border-accent-300 dark:hover:border-accent-600 transition-all" data-astro-cid-ligjhper> <div class="flex-1 min-w-0" data-astro-cid-ligjhper> <div class="text-xs text-gray-400 dark:text-gray-500 mb-1" data-astro-cid-ligjhper>总论</div> <div class="font-medium text-gray-800 dark:text-gray-200 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors" data-astro-cid-ligjhper>公司的能力</div> </div> </a> </div> </div> </div> <!-- Right TOC: always scrollable independently --> <aside class="hidden lg:block w-64 flex-shrink-0" data-astro-cid-ligjhper> <div class="sticky top-24 max-h-[calc(100vh-7rem)] overflow-y-auto pr-2 pb-8 scrollbar-thin" data-astro-cid-ligjhper> <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-3" data-astro-cid-ligjhper>目录</h3> <nav id="toc-desktop" class="text-sm" data-astro-cid-ligjhper></nav> </div> </aside> </article>  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script> <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -877,4 +1094,4 @@
         }
       }
     });
-  </script>   <button id="toc-toggle" class="fixed bottom-6 right-6 z-40 lg:hidden w-11 h-11 rounded-full shadow-lg bg-accent-600 text-white flex items-center justify-center hover:bg-accent-700 active:bg-accent-800 transition-colors" aria-label="打开目录" data-astro-cid-ligjhper> <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-ligjhper> <path d="M4 6h16M4 12h10M4 18h14" data-astro-cid-ligjhper></path> </svg> </button> <div id="toc-overlay" class="fixed inset-0 z-40 bg-black/40 hidden lg:hidden" data-astro-cid-ligjhper></div> <div id="toc-panel" class="fixed top-0 right-0 z-50 lg:hidden w-72 h-full bg-white dark:bg-primary-900 border-l border-gray-200 dark:border-primary-800 transform translate-x-full transition-transform duration-300 overflow-y-auto pt-16 px-4 pb-8" data-astro-cid-ligjhper> <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-3" data-astro-cid-ligjhper>目录</h3> <nav id="toc-mobile" class="text-sm" data-astro-cid-ligjhper></nav> </div>  </div> </main> </div> <!-- Footer --> <footer class="border-t border-primary-200/60 dark:border-primary-800/30 mt-auto"> <div class="max-w-[1800px] mx-auto px-6 py-6 flex items-center justify-between text-[11px] text-gray-400 dark:text-gray-600"> <span class="font-display">公司法知识库</span> <div class="flex items-center gap-4"> <a href="https://github.com/oystero" target="_blank" rel="noopener" class="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">GitHub</a> <a href="mailto:oystero185@gmail.com" class="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">oystero185@gmail.com</a> </div> </div> </footer> <div id="sidebar-overlay" class="fixed inset-0 z-20 bg-black/40 hidden lg:hidden"></div> <script type="module">const g=document.getElementById("theme-toggle"),o=document.getElementById("theme-light-icon"),s=document.getElementById("theme-dark-icon"),u=document.documentElement.classList.contains("dark");u?(o?.classList.add("hidden"),s?.classList.remove("hidden")):(o?.classList.remove("hidden"),s?.classList.add("hidden"));g?.addEventListener("click",()=>{const e=!document.documentElement.classList.contains("dark");document.documentElement.style.transition="background-color 0.3s, color 0.3s",document.body.style.transition="background-color 0.3s, color 0.3s",e?(document.documentElement.classList.add("dark"),o?.classList.add("hidden"),s?.classList.remove("hidden"),localStorage.setItem("theme","dark")):(document.documentElement.classList.remove("dark"),o?.classList.remove("hidden"),s?.classList.add("hidden"),localStorage.setItem("theme","light")),setTimeout(()=>{document.documentElement.style.transition="",document.body.style.transition=""},300)});const h=document.getElementById("mobile-menu-toggle"),y=document.getElementById("sidebar"),r=document.getElementById("sidebar-overlay");function a(){y?.classList.toggle("-translate-x-full"),r?.classList.toggle("hidden")}h?.addEventListener("click",a);r?.addEventListener("click",a);document.querySelectorAll(".sidebar-module").forEach(e=>{const t=e.querySelector(".sidebar-toggle"),d=e.querySelector("a"),c=e.querySelector(".sidebar-articles");if(!c)return;function l(n){n.preventDefault(),n.stopPropagation();const m=t?.querySelector("svg");c.classList.toggle("hidden"),m?.classList.toggle("rotate-90")}t?.addEventListener("click",l),d?.addEventListener("click",n=>{window.innerWidth<1024&&l(n)})});const i=document.getElementById("reading-progress");window.addEventListener("scroll",()=>{const e=window.scrollY,t=document.documentElement.scrollHeight-window.innerHeight,d=t>0?e/t*100:0;i&&(i.style.width=`${Math.min(100,d)}%`)});document.addEventListener("keydown",e=>{(e.ctrlKey||e.metaKey)&&e.key==="k"&&(e.preventDefault(),window.location.href="/gongsi-kb/search/")});</script> </body> </html> 
+  </script>   <button id="toc-toggle" class="fixed bottom-6 right-6 z-40 lg:hidden w-11 h-11 rounded-full shadow-lg bg-accent-600 text-white flex items-center justify-center hover:bg-accent-700 active:bg-accent-800 transition-colors" aria-label="打开目录" data-astro-cid-ligjhper> <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-ligjhper> <path d="M4 6h16M4 12h10M4 18h14" data-astro-cid-ligjhper></path> </svg> </button> <div id="toc-overlay" class="fixed inset-0 z-40 bg-black/40 hidden lg:hidden" data-astro-cid-ligjhper></div> <div id="toc-panel" class="fixed top-0 right-0 z-50 lg:hidden w-72 h-full bg-white dark:bg-primary-900 border-l border-gray-200 dark:border-primary-800 transform translate-x-full transition-transform duration-300 overflow-y-auto pt-16 px-4 pb-8" data-astro-cid-ligjhper> <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-3" data-astro-cid-ligjhper>目录</h3> <nav id="toc-mobile" class="text-sm" data-astro-cid-ligjhper></nav> </div>  </div> </main> </div> <!-- Footer --> <footer class="border-t border-primary-200/60 dark:border-primary-800/30 mt-auto"> <div class="max-w-[1800px] mx-auto px-6 py-6 flex items-center justify-between text-[11px] text-gray-400 dark:text-gray-600"> <span class="font-display">公司法知识库</span> <div class="flex items-center gap-4"> <a href="https://github.com/oystero" target="_blank" rel="noopener" class="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">GitHub</a> <a href="mailto:zoe020808@gmail.com" class="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">zoe020808@gmail.com</a> </div> </div> </footer> <div id="sidebar-overlay" class="fixed inset-0 z-20 bg-black/40 hidden lg:hidden"></div> <script type="module">const g=document.getElementById("theme-toggle"),o=document.getElementById("theme-light-icon"),s=document.getElementById("theme-dark-icon"),u=document.documentElement.classList.contains("dark");u?(o?.classList.add("hidden"),s?.classList.remove("hidden")):(o?.classList.remove("hidden"),s?.classList.add("hidden"));g?.addEventListener("click",()=>{const e=!document.documentElement.classList.contains("dark");document.documentElement.style.transition="background-color 0.3s, color 0.3s",document.body.style.transition="background-color 0.3s, color 0.3s",e?(document.documentElement.classList.add("dark"),o?.classList.add("hidden"),s?.classList.remove("hidden"),localStorage.setItem("theme","dark")):(document.documentElement.classList.remove("dark"),o?.classList.remove("hidden"),s?.classList.add("hidden"),localStorage.setItem("theme","light")),setTimeout(()=>{document.documentElement.style.transition="",document.body.style.transition=""},300)});const h=document.getElementById("mobile-menu-toggle"),y=document.getElementById("sidebar"),r=document.getElementById("sidebar-overlay");function a(){y?.classList.toggle("-translate-x-full"),r?.classList.toggle("hidden")}h?.addEventListener("click",a);r?.addEventListener("click",a);document.querySelectorAll(".sidebar-module").forEach(e=>{const t=e.querySelector(".sidebar-toggle"),d=e.querySelector("a"),c=e.querySelector(".sidebar-articles");if(!c)return;function l(n){n.preventDefault(),n.stopPropagation();const m=t?.querySelector("svg");c.classList.toggle("hidden"),m?.classList.toggle("rotate-90")}t?.addEventListener("click",l),d?.addEventListener("click",n=>{window.innerWidth<1024&&l(n)})});const i=document.getElementById("reading-progress");window.addEventListener("scroll",()=>{const e=window.scrollY,t=document.documentElement.scrollHeight-window.innerHeight,d=t>0?e/t*100:0;i&&(i.style.width=`${Math.min(100,d)}%`)});document.addEventListener("keydown",e=>{(e.ctrlKey||e.metaKey)&&e.key==="k"&&(e.preventDefault(),window.location.href="/gongsi-kb/search/")});</script> </body> </html> 

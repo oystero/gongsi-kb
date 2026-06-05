@@ -7,119 +7,146 @@
     })();
   </script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/gongsi-kb/_astro/index.DAB3Pb70.css">
 <style>.scrollbar-thin[data-astro-cid-ligjhper]::-webkit-scrollbar{width:4px}.scrollbar-thin[data-astro-cid-ligjhper]::-webkit-scrollbar-track{background:transparent}.scrollbar-thin[data-astro-cid-ligjhper]::-webkit-scrollbar-thumb{background-color:#9ca3af4d;border-radius:2px}.scrollbar-thin[data-astro-cid-ligjhper]::-webkit-scrollbar-thumb:hover{background-color:#9ca3af80}.dark .scrollbar-thin[data-astro-cid-ligjhper]::-webkit-scrollbar-thumb{background-color:#4b556366}.mermaid{text-align:center;overflow-x:auto}
-</style></head> <body class="bg-primary-50 dark:bg-primary-950 text-gray-900 dark:text-gray-100 font-sans min-h-screen flex flex-col"> <!-- Reading Progress --> <div id="reading-progress" class="fixed top-0 left-0 h-[2px] bg-accent-500/80 z-50 transition-all duration-150" style="width: 0%"></div> <!-- Header --> <header class="sticky top-0 z-40 bg-white/90 dark:bg-primary-900/90 backdrop-blur-sm border-b border-primary-200 dark:border-primary-800/60"> <div class="max-w-[1800px] mx-auto px-6 h-14 flex items-center justify-between"> <div class="flex items-center gap-3"> <a href="/gongsi-kb/" class="flex items-center gap-2.5 text-base font-semibold tracking-tight text-primary-700 dark:text-accent-400 hover:opacity-80 transition-opacity"> <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"></path></svg> <span class="hidden sm:inline font-display">公司法知识库</span> </a> </div> <div class="flex items-center gap-2"> <a href="/gongsi-kb/search/" class="flex items-center gap-2 px-3 py-1.5 rounded-md bg-primary-100 dark:bg-primary-800/60 text-gray-500 dark:text-gray-400 hover:bg-primary-200 dark:hover:bg-primary-700/60 transition-colors text-sm" title="搜索"> <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg> <span class="hidden md:inline text-xs">搜索</span> <kbd class="hidden md:inline px-1 py-0.5 text-[10px] bg-primary-200/60 dark:bg-primary-700/60 rounded text-gray-400 dark:text-gray-500">⌘K</kbd> </a> <a href="/gongsi-kb/graph/" class="p-1.5 rounded-md text-gray-400 dark:text-gray-500 hover:bg-primary-100 dark:hover:bg-primary-800/60 transition-colors" title="知识图谱"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"></circle><circle cx="18" cy="6" r="2"></circle><circle cx="6" cy="18" r="2"></circle><circle cx="18" cy="18" r="2"></circle><circle cx="12" cy="12" r="2"></circle><path d="M8 6h8M6 8v8M18 8v8M8 18h8M8 8l4 4M16 8l-4 4M8 16l4-4M16 16l-4-4"></path></svg> </a> <button id="theme-toggle" class="p-1.5 rounded-md text-gray-400 dark:text-gray-500 hover:bg-primary-100 dark:hover:bg-primary-800/60 transition-colors" title="切换主题"> <svg id="theme-light-icon" class="w-4 h-4 hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path></svg> <svg id="theme-dark-icon" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg> </button> <button id="mobile-menu-toggle" class="p-1.5 rounded-md text-gray-400 dark:text-gray-500 hover:bg-primary-100 dark:hover:bg-primary-800/60 transition-colors lg:hidden"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg> </button> </div> </div> </header> <div class="flex flex-1 max-w-[1800px] mx-auto w-full"> <aside id="sidebar" class="fixed lg:sticky top-14 left-0 z-30 w-56 xl:w-64 h-[calc(100vh-3.5rem)] overflow-y-auto bg-white dark:bg-primary-900/80 border-r border-primary-200 dark:border-primary-800/40 transform -translate-x-full transition-transform duration-300 flex-shrink-0 lg:translate-x-0"> <nav class="p-3 space-y-0.5"> <a href="/gongsi-kb/" class="flex items-center gap-2 px-3 py-2 rounded-md text-sm transition-colors text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="font-display text-xs">首页</span> </a> <div class="pt-3 pb-1.5 px-3 text-[10px] font-medium text-gray-400 dark:text-gray-600 uppercase tracking-widest">知识模块</div> <div class="sidebar-module" data-module="00-法律全文"> <div class="flex items-center"> <a href="/gongsi-kb/modules/00-%E6%B3%95%E5%BE%8B%E5%85%A8%E6%96%87/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">壹</span> <span class="font-display text-xs truncate">法律全文</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/中华人民共和国公司法全文-2023年修订/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 中华人民共和国公司法全文（2023年修订） </a> </div> </div><div class="sidebar-module" data-module="01-总论"> <div class="flex items-center"> <a href="/gongsi-kb/modules/01-%E6%80%BB%E8%AE%BA/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">贰</span> <span class="font-display text-xs truncate">总论</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/公司法总览/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司法总览 </a><a href="/gongsi-kb/articles/公司法基础理论/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司法基础理论 </a><a href="/gongsi-kb/articles/公司的分类/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司的分类 </a><a href="/gongsi-kb/articles/公司的能力/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司的能力 </a> </div> </div><div class="sidebar-module" data-module="02-设立与股东"> <div class="flex items-center"> <a href="/gongsi-kb/modules/02-%E8%AE%BE%E7%AB%8B%E4%B8%8E%E8%82%A1%E4%B8%9C/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">叁</span> <span class="font-display text-xs truncate">设立与股东</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/公司的设立/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司的设立 </a><a href="/gongsi-kb/articles/股东资格与股东权利/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 股东资格与股东权利 </a> </div> </div><div class="sidebar-module" data-module="03-治理与财务"> <div class="flex items-center"> <a href="/gongsi-kb/modules/03-%E6%B2%BB%E7%90%86%E4%B8%8E%E8%B4%A2%E5%8A%A1/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 bg-accent-50 dark:bg-accent-900/15 text-accent-700 dark:text-accent-400 font-medium"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">肆</span> <span class="font-display text-xs truncate">治理与财务</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200 rotate-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3"> <a href="/gongsi-kb/articles/董事-监事-高级管理人员制度/" class="block py-1 text-xs rounded transition-colors truncate text-accent-700 dark:text-accent-400 font-medium"> 董事、监事、高级管理人员制度 </a><a href="/gongsi-kb/articles/公司财务会计制度/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司财务会计制度 </a> </div> </div><div class="sidebar-module" data-module="04-变更与终止"> <div class="flex items-center"> <a href="/gongsi-kb/modules/04-%E5%8F%98%E6%9B%B4%E4%B8%8E%E7%BB%88%E6%AD%A2/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">伍</span> <span class="font-display text-xs truncate">变更与终止</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/公司重大变更/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司重大变更 </a><a href="/gongsi-kb/articles/公司解散与清算/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司解散与清算 </a> </div> </div><div class="sidebar-module" data-module="05-有限责任公司"> <div class="flex items-center"> <a href="/gongsi-kb/modules/05-%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">陆</span> <span class="font-display text-xs truncate">有限责任公司</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/有限责任公司/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 有限责任公司 </a> </div> </div><div class="sidebar-module" data-module="06-股份有限公司"> <div class="flex items-center"> <a href="/gongsi-kb/modules/06-%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">柒</span> <span class="font-display text-xs truncate">股份有限公司</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/股份有限公司/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 股份有限公司 </a> </div> </div><div class="sidebar-module" data-module="07-特殊公司"> <div class="flex items-center"> <a href="/gongsi-kb/modules/07-%E7%89%B9%E6%AE%8A%E5%85%AC%E5%8F%B8/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">捌</span> <span class="font-display text-xs truncate">特殊公司</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/国家出资公司/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 国家出资公司 </a> </div> </div><div class="sidebar-module" data-module="08-实务专题"> <div class="flex items-center"> <a href="/gongsi-kb/modules/08-%E5%AE%9E%E5%8A%A1%E4%B8%93%E9%A2%98/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">玖</span> <span class="font-display text-xs truncate">实务专题</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/实务-公司决议效力判断/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 实务-公司决议效力判断 </a><a href="/gongsi-kb/articles/实务-公司担保的审查与风险/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 实务-公司担保的审查与风险 </a><a href="/gongsi-kb/articles/实务-对赌协议实务/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 实务-对赌协议实务 </a><a href="/gongsi-kb/articles/实务-股权转让与出资责任/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 实务-股权转让与出资责任 </a> </div> </div><div class="sidebar-module" data-module="09-法条索引"> <div class="flex items-center"> <a href="/gongsi-kb/modules/09-%E6%B3%95%E6%9D%A1%E7%B4%A2%E5%BC%95/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">拾</span> <span class="font-display text-xs truncate">法条索引</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/公司法核心法条索引/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司法核心法条索引 </a> </div> </div><div class="sidebar-module" data-module="10-学者观点"> <div class="flex items-center"> <a href="/gongsi-kb/modules/10-%E5%AD%A6%E8%80%85%E8%A7%82%E7%82%B9/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">拾壹</span> <span class="font-display text-xs truncate">学者观点</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/王毓莹教授公司法学术观点/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 王毓莹教授公司法学术观点 </a> </div> </div> </nav> </aside> <main class="flex-1 min-w-0"> <div class="max-w-5xl mx-auto px-6 sm:px-8 lg:px-10 xl:px-12 py-10">  <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6 flex-wrap" data-astro-cid-ligjhper> <a href="/gongsi-kb/" class="hover:text-accent-600 dark:hover:text-accent-400" data-astro-cid-ligjhper>首页</a> <span data-astro-cid-ligjhper>/</span> <a href="/gongsi-kb/modules/03-%E6%B2%BB%E7%90%86%E4%B8%8E%E8%B4%A2%E5%8A%A1/" class="hover:text-accent-600 dark:hover:text-accent-400" data-astro-cid-ligjhper>治理与财务</a> <span data-astro-cid-ligjhper>/</span> <span class="text-gray-800 dark:text-gray-200 truncate" data-astro-cid-ligjhper>董事、监事、高级管理人员制度</span> </nav> <article class="flex gap-8" data-astro-cid-ligjhper> <div class="flex-1 min-w-0" data-astro-cid-ligjhper> <header class="mb-8" data-astro-cid-ligjhper> <h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-primary-800 pb-3 mb-4" data-astro-cid-ligjhper>董事、监事、高级管理人员制度</h1> <div class="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 flex-wrap" data-astro-cid-ligjhper> <span class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300" data-astro-cid-ligjhper>治理与财务</span> <span data-astro-cid-ligjhper></span> <span data-astro-cid-ligjhper>8721字</span> <span data-astro-cid-ligjhper>22 分钟阅读</span> </div>  </header> <div class="prose" data-astro-cid-ligjhper><h2 id="一-知识框架">一、知识框架</h2>
+</style></head> <body class="bg-primary-50 dark:bg-primary-950 text-gray-900 dark:text-gray-100 font-sans min-h-screen flex flex-col"> <!-- Reading Progress --> <div id="reading-progress" class="fixed top-0 left-0 h-[2px] bg-accent-500/80 z-50 transition-all duration-150" style="width: 0%"></div> <!-- Header --> <header class="sticky top-0 z-40 bg-white/90 dark:bg-primary-900/90 backdrop-blur-sm border-b border-primary-200 dark:border-primary-800/60"> <div class="max-w-[1800px] mx-auto px-6 h-14 flex items-center justify-between"> <div class="flex items-center gap-3"> <a href="/gongsi-kb/" class="flex items-center gap-2.5 text-base font-semibold tracking-tight text-primary-700 dark:text-accent-400 hover:opacity-80 transition-opacity"> <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"></path></svg> <span class="hidden sm:inline font-display">公司法知识库</span> </a> </div> <div class="flex items-center gap-2"> <a href="/gongsi-kb/search/" class="flex items-center gap-2 px-3 py-1.5 rounded-md bg-primary-100 dark:bg-primary-800/60 text-gray-500 dark:text-gray-400 hover:bg-primary-200 dark:hover:bg-primary-700/60 transition-colors text-sm" title="搜索"> <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg> <span class="hidden md:inline text-xs">搜索</span> <kbd class="hidden md:inline px-1 py-0.5 text-[10px] bg-primary-200/60 dark:bg-primary-700/60 rounded text-gray-400 dark:text-gray-500">⌘K</kbd> </a> <a href="/gongsi-kb/graph/" class="p-1.5 rounded-md text-gray-400 dark:text-gray-500 hover:bg-primary-100 dark:hover:bg-primary-800/60 transition-colors" title="知识图谱"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"></circle><circle cx="18" cy="6" r="2"></circle><circle cx="6" cy="18" r="2"></circle><circle cx="18" cy="18" r="2"></circle><circle cx="12" cy="12" r="2"></circle><path d="M8 6h8M6 8v8M18 8v8M8 18h8M8 8l4 4M16 8l-4 4M8 16l4-4M16 16l-4-4"></path></svg> </a> <button id="theme-toggle" class="p-1.5 rounded-md text-gray-400 dark:text-gray-500 hover:bg-primary-100 dark:hover:bg-primary-800/60 transition-colors" title="切换主题"> <svg id="theme-light-icon" class="w-4 h-4 hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path></svg> <svg id="theme-dark-icon" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg> </button> <button id="mobile-menu-toggle" class="p-1.5 rounded-md text-gray-400 dark:text-gray-500 hover:bg-primary-100 dark:hover:bg-primary-800/60 transition-colors lg:hidden"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg> </button> </div> </div> </header> <div class="flex flex-1 max-w-[1800px] mx-auto w-full"> <aside id="sidebar" class="fixed lg:sticky top-14 left-0 z-30 w-56 xl:w-64 h-[calc(100vh-3.5rem)] overflow-y-auto bg-white dark:bg-primary-900/80 border-r border-primary-200 dark:border-primary-800/40 transform -translate-x-full transition-transform duration-300 flex-shrink-0 lg:translate-x-0"> <nav class="p-3 space-y-0.5"> <a href="/gongsi-kb/" class="flex items-center gap-2 px-3 py-2 rounded-md text-sm transition-colors text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="font-display text-xs">首页</span> </a> <div class="pt-3 pb-1.5 px-3 text-[10px] font-medium text-gray-400 dark:text-gray-600 uppercase tracking-widest">知识模块</div> <div class="sidebar-module" data-module="00-法律全文"> <div class="flex items-center"> <a href="/gongsi-kb/modules/00-%E6%B3%95%E5%BE%8B%E5%85%A8%E6%96%87/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">壹</span> <span class="font-display text-xs truncate">法律全文</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/中华人民共和国公司法全文-2023年修订/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 中华人民共和国公司法全文（2023年修订） </a> </div> </div><div class="sidebar-module" data-module="01-总论"> <div class="flex items-center"> <a href="/gongsi-kb/modules/01-%E6%80%BB%E8%AE%BA/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">贰</span> <span class="font-display text-xs truncate">总论</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/公司法总览/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司法总览 </a><a href="/gongsi-kb/articles/公司法基础理论/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司法基础理论 </a><a href="/gongsi-kb/articles/公司的分类/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司的分类 </a><a href="/gongsi-kb/articles/公司的能力/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司的能力 </a> </div> </div><div class="sidebar-module" data-module="02-设立与股东"> <div class="flex items-center"> <a href="/gongsi-kb/modules/02-%E8%AE%BE%E7%AB%8B%E4%B8%8E%E8%82%A1%E4%B8%9C/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">叁</span> <span class="font-display text-xs truncate">设立与股东</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/公司的设立/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司的设立 </a><a href="/gongsi-kb/articles/股东资格与股东权利/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 股东资格与股东权利 </a> </div> </div><div class="sidebar-module" data-module="03-治理与财务"> <div class="flex items-center"> <a href="/gongsi-kb/modules/03-%E6%B2%BB%E7%90%86%E4%B8%8E%E8%B4%A2%E5%8A%A1/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 bg-accent-50 dark:bg-accent-900/15 text-accent-700 dark:text-accent-400 font-medium"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">肆</span> <span class="font-display text-xs truncate">治理与财务</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200 rotate-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3"> <a href="/gongsi-kb/articles/董事-监事-高级管理人员制度/" class="block py-1 text-xs rounded transition-colors truncate text-accent-700 dark:text-accent-400 font-medium"> 董事、监事、高级管理人员制度 </a><a href="/gongsi-kb/articles/公司财务-会计制度/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司财务、会计制度 </a> </div> </div><div class="sidebar-module" data-module="04-变更与终止"> <div class="flex items-center"> <a href="/gongsi-kb/modules/04-%E5%8F%98%E6%9B%B4%E4%B8%8E%E7%BB%88%E6%AD%A2/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">伍</span> <span class="font-display text-xs truncate">变更与终止</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/公司重大变更/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司重大变更 </a><a href="/gongsi-kb/articles/公司解散与清算/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司解散与清算 </a> </div> </div><div class="sidebar-module" data-module="05-有限责任公司"> <div class="flex items-center"> <a href="/gongsi-kb/modules/05-%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">陆</span> <span class="font-display text-xs truncate">有限责任公司</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/有限责任公司/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 有限责任公司 </a> </div> </div><div class="sidebar-module" data-module="06-股份有限公司"> <div class="flex items-center"> <a href="/gongsi-kb/modules/06-%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">柒</span> <span class="font-display text-xs truncate">股份有限公司</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/股份有限公司/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 股份有限公司 </a> </div> </div><div class="sidebar-module" data-module="07-特殊公司"> <div class="flex items-center"> <a href="/gongsi-kb/modules/07-%E7%89%B9%E6%AE%8A%E5%85%AC%E5%8F%B8/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">捌</span> <span class="font-display text-xs truncate">特殊公司</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/国家出资公司/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 国家出资公司 </a> </div> </div><div class="sidebar-module" data-module="08-实务专题"> <div class="flex items-center"> <a href="/gongsi-kb/modules/08-%E5%AE%9E%E5%8A%A1%E4%B8%93%E9%A2%98/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">玖</span> <span class="font-display text-xs truncate">实务专题</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/实务-公司决议效力判断/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 实务-公司决议效力判断 </a><a href="/gongsi-kb/articles/实务-公司担保的审查与风险/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 实务-公司担保的审查与风险 </a><a href="/gongsi-kb/articles/实务-对赌协议实务/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 实务-对赌协议实务 </a><a href="/gongsi-kb/articles/实务-股权转让与出资责任/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 实务-股权转让与出资责任 </a> </div> </div><div class="sidebar-module" data-module="09-法条索引"> <div class="flex items-center"> <a href="/gongsi-kb/modules/09-%E6%B3%95%E6%9D%A1%E7%B4%A2%E5%BC%95/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">拾</span> <span class="font-display text-xs truncate">法条索引</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/公司法核心法条索引/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 公司法核心法条索引 </a> </div> </div><div class="sidebar-module" data-module="10-学者观点"> <div class="flex items-center"> <a href="/gongsi-kb/modules/10-%E5%AD%A6%E8%80%85%E8%A7%82%E7%82%B9/" class="flex-1 flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors min-w-0 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40"> <span class="w-5 text-center text-[11px] font-medium text-gray-400 dark:text-gray-600 flex-shrink-0">拾壹</span> <span class="font-display text-xs truncate">学者观点</span> </a> <button class="sidebar-toggle p-1.5 rounded text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-800/40 transition-colors flex-shrink-0" aria-label="展开/收起"> <svg class="w-3 h-3 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg> </button> </div> <div class="sidebar-articles ml-5 mt-0.5 mb-1 space-y-0.5 border-l border-primary-200 dark:border-primary-800/40 pl-3 hidden"> <a href="/gongsi-kb/articles/王毓莹教授公司法学术观点/" class="block py-1 text-xs rounded transition-colors truncate text-gray-500 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400"> 王毓莹教授公司法学术观点 </a> </div> </div> </nav> </aside> <main class="flex-1 min-w-0"> <div class="max-w-5xl mx-auto px-6 sm:px-8 lg:px-10 xl:px-12 py-10">  <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6 flex-wrap" data-astro-cid-ligjhper> <a href="/gongsi-kb/" class="hover:text-accent-600 dark:hover:text-accent-400" data-astro-cid-ligjhper>首页</a> <span data-astro-cid-ligjhper>/</span> <a href="/gongsi-kb/modules/03-%E6%B2%BB%E7%90%86%E4%B8%8E%E8%B4%A2%E5%8A%A1/" class="hover:text-accent-600 dark:hover:text-accent-400" data-astro-cid-ligjhper>治理与财务</a> <span data-astro-cid-ligjhper>/</span> <span class="text-gray-800 dark:text-gray-200 truncate" data-astro-cid-ligjhper>董事、监事、高级管理人员制度</span> </nav> <article class="flex gap-8" data-astro-cid-ligjhper> <div class="flex-1 min-w-0" data-astro-cid-ligjhper> <header class="mb-8" data-astro-cid-ligjhper> <h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-primary-800 pb-3 mb-4" data-astro-cid-ligjhper>董事、监事、高级管理人员制度</h1> <div class="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 flex-wrap" data-astro-cid-ligjhper> <span class="px-2 py-0.5 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300" data-astro-cid-ligjhper>治理与财务</span> <span data-astro-cid-ligjhper></span> <span data-astro-cid-ligjhper>1.3万字</span> <span data-astro-cid-ligjhper>33 分钟阅读</span> </div>  </header> <div class="prose" data-astro-cid-ligjhper><h2 id="一-知识框架">一、知识框架</h2>
 <pre><code class="language-mermaid">graph TD
-    A[董监高制度] --&gt; B[董事&lt;br&gt;选任·义务·审计委员会]
-    A --&gt; C[监事/监事会&lt;br&gt;vs审计委员会]
-    A --&gt; D[高管&lt;br&gt;经理·财负责人·董秘]
-    A --&gt; E[责任体系&lt;br&gt;赔偿·代表诉讼·归入权]
-    A --&gt; F[关联交易·竞业禁止]
+    A[董监高制度] --&gt; B[任职资格与选任]
+    A --&gt; C[义务体系]
+    A --&gt; D[关联交易规制与竞业禁止]
+    A --&gt; G[组织机构选择]
+    A --&gt; E[责任体系]
+    A --&gt; I[案例分析与对比归纳]
+
+    B --&gt; B0[概念：董事/监事/高级管理人员/法定代表人]
+    B --&gt; B1[消极任职资格：六类不适格情形]
+    B --&gt; B2[不适格董监高的处理]
+    B --&gt; B3[董事的任期与辞任]
+
+    C --&gt; C1[忠实义务：避免利益冲突]
+    C --&gt; C2[勤勉义务：合理注意]
+    C --&gt; C3[实质董事：控股股东/实控人执行事务]
+    C --&gt; C4[禁止行为：六项]
+
+    D --&gt; D1[自我交易：关联交易规制]
+    D --&gt; D2[谋取公司商业机会]
+    D --&gt; D3[竞业禁止义务]
+    D --&gt; D4[关联董事回避表决]
+    D --&gt; D5[归入权：违规收入归公司]
+
+    G --&gt; G1[监事会制度：组成/职权/简化治理]
+    G --&gt; G2[审计委员会制度：单层制]
+    G --&gt; G3[高级管理人员：范围与职权]
+
+    E --&gt; E1[对公司的赔偿责任]
+    E --&gt; E2[对第三人的赔偿责任]
+    E --&gt; E3[影子董事连带责任]
+    E --&gt; E4[股东代表诉讼：前置程序与规则]
+    E --&gt; E5[股东直接诉讼]
+    E --&gt; E6[董事责任保险]
 </code></pre>
 <hr>
-<h2 id="二-核心制度详解">二、核心制度详解</h2>
-<h3 id="一-董事制度">（一）董事制度</h3>
-<h4 id="1-董事的资格与选任">1. 董事的资格与选任</h4>
-<p>◆ <strong>核心规则</strong>：根据<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC59%E6%9D%A1">《公司法》第59条</a>，股东会行使选举和更换董事的职权。有限责任公司的董事由股东会选举产生；股份有限公司的董事由股东大会选举产生。</p>
-<p><strong>概念</strong>：</p>
-<ul>
-<li>董事是由公司股东会选举产生的，负责公司内部管理和对外经营决策的人员</li>
-<li>全体董事组成董事会，董事会是公司的日常经营决策机构</li>
-</ul>
-<p><strong>任职资格的消极条件</strong>（第146条）：</p>
-<ul>
-<li>无民事行为能力或者限制民事行为能力</li>
-<li>因贪污、贿赂、侵占财产、挪用财产或者破坏社会主义市场经济秩序，被判处刑罚，执行期满未逾五年；<strong>被宣告缓刑的，自缓刑考验期满之日起未逾二年</strong></li>
-<li>因犯罪被剥夺政治权利，执行期满未逾五年；<strong>被宣告缓刑的，自缓刑考验期满之日起未逾二年</strong></li>
-<li>担任破产清算的公司、企业的经理或者董事、厂长，对破产负有个人责任的，破产清算完结之日起未逾三年</li>
-<li><strong>担任因违法被吊销营业执照、责令关闭的公司、企业的法定代表人，并负有个人责任的，被吊销营业执照、责令关闭之日起未逾三年</strong></li>
-<li>个人所负数额较大的债务到期未清偿<strong>被人民法院列为失信被执行人</strong></li>
-</ul>
-<p><strong>不适格董监高的处理方式</strong>：</p>
+<h2 id="二-董监高的任职资格与选任">二、董监高的任职资格与选任</h2>
+<h3 id="一-概念">（一）概念</h3>
+<p><strong>董事</strong>：</p>
 <ol>
-<li>违反规定选举、委派董事、监事或者聘任高级管理人员的，该选举、委派或者聘任<strong>无效</strong></li>
-<li>董事、监事、高级管理人员在任职期间出现不得担任董监高情形的，公司应当<strong>解除其职务</strong></li>
+<li>由公司股东会选举产生的，负责公司内部管理和对外经营决策的人员</li>
+<li>全体董事组成董事会，董事会是公司的日常经营决策机构</li>
 </ol>
-<blockquote>
-<p><strong>注意</strong>：新公司法取消了有限责任公司董事会人数上限，仅要求三人以上（第68条）。</p>
-</blockquote>
-<h4 id="2-董事的任期与辞任">2. 董事的任期与辞任</h4>
+<p><strong>监事</strong>：</p>
+<ol>
+<li>由股东会或职工代表大会选举产生的，负责监督公司财务状况、董事和高级管理人员履职行为的人员</li>
+<li>全体监事组成监事会，监事会是公司的监督机构</li>
+</ol>
+<p><strong>高级管理人员</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC265%E6%9D%A1">《公司法》第265条</a>）：</p>
 <ul>
-<li>董事任期由公司章程规定，每届任期不得超过三年，任期届满可以连选连任（第70条）</li>
-<li>董事辞任的，以公司收到辞任通知之日辞任生效；但在改选出的董事就任前，原董事仍应当依照法律、行政法规和公司章程的规定，履行董事职务</li>
+<li>公司的经理、副经理、财务负责人、上市公司董事会秘书和公司章程规定的其他人员</li>
+<li>高级管理人员由董事会聘任</li>
 </ul>
-<h4 id="2-5-法定代表人">2.5  法定代表人</h4>
-<p>◆ <strong>核心规则</strong>：法定代表人是依照法律或者公司章程的规定，代表公司从事民事活动的负责人。</p>
-<p><strong>法定代表人的要点</strong>：</p>
+<p><strong>法定代表人</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC11%E6%9D%A1">《公司法》第11条</a>）：</p>
 <ol>
 <li>法定代表人以公司名义从事的民事活动，其法律后果由公司承受</li>
 <li>法定代表人依照公司章程的规定，由<strong>代表公司执行公司事务的董事或者经理</strong>担任</li>
 <li>担任法定代表人的董事或者经理辞任的，视为<strong>同时辞去法定代表人</strong></li>
 <li>法定代表人辞任的，公司应当在法定代表人辞任之日起<strong>30日内</strong>确定新的法定代表人</li>
 <li>公司法定代表人变更，应当办理变更登记，变更登记申请书由<strong>变更后的法定代表人</strong>签署</li>
+<li>公司章程或者股东会对法定代表人职权的限制，不得对抗善意相对人</li>
 </ol>
-<h4 id="3-董事会的组成-职权与议事规则">3. 董事会的组成、职权与议事规则</h4>
-<p><strong>董事会的组成</strong>（第68条）：</p>
-<ul>
-<li>有限责任公司设董事会，成员为三人以上</li>
-<li>股东人数较少或者规模较小的有限责任公司，可以不设董事会，设一名董事（第75条）</li>
-<li>董事会设董事长一人，可以设副董事长</li>
-</ul>
-<p><strong>董事会的职权</strong>（第67条）：</p>
+<h3 id="二-不得担任董监高的情形">（二）不得担任董监高的情形</h3>
+<p>◆ <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC178%E6%9D%A1">《公司法》第178条</a>规定了六类消极任职资格：</p>
 <div class="table-wrapper"><table><thead>
 <tr>
-<th>职权类型</th>
+<th style="text-align:center">序号</th>
+<th>情形</th>
 <th>具体内容</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>召集权</td>
-<td>召集股东会会议，并向股东会报告工作</td>
+<td style="text-align:center">①</td>
+<td>非完全民事行为能力</td>
+<td>无民事行为能力或者限制民事行为能力</td>
 </tr>
 <tr>
-<td>执行权</td>
-<td>执行股东会的决议</td>
+<td style="text-align:center">②</td>
+<td>经济犯罪</td>
+<td>因贪污、贿赂、侵占财产、挪用财产或者破坏社会主义市场经济秩序，被判处刑罚，执行期满未逾5年；被宣告缓刑的，自缓刑考验期满之日起未逾2年</td>
 </tr>
 <tr>
-<td>决策权</td>
-<td>决定公司的经营计划和投资方案</td>
+<td style="text-align:center">③</td>
+<td>剥夺政治权利</td>
+<td>因犯罪被剥夺政治权利，执行期满未逾5年；被宣告缓刑的，自缓刑考验期满之日起未逾2年</td>
 </tr>
 <tr>
-<td>方案权</td>
-<td>制订公司年度财务预算方案、决算方案、利润分配方案、弥补亏损方案</td>
+<td style="text-align:center">④</td>
+<td>破产清算</td>
+<td>担任破产清算的公司、企业的董事或者厂长、经理，对该公司、企业的破产负有个人责任的，自破产清算完结之日起未逾3年</td>
 </tr>
 <tr>
-<td>方案权</td>
-<td>制订公司增加或者减少注册资本、发行公司债券、合并、分立、解散或者变更公司形式的方案</td>
+<td style="text-align:center">⑤</td>
+<td>违法被关闭</td>
+<td>担任因违法被吊销营业执照、责令关闭的公司、企业的<strong>法定代表人</strong>，并负有个人责任的，自被吊销营业执照、责令关闭之日起未逾3年</td>
 </tr>
 <tr>
-<td>人事权</td>
-<td>决定公司内部管理机构的设置；决定聘任或者解聘公司经理及其报酬事项</td>
-</tr>
-<tr>
-<td>制度权</td>
-<td>制定公司的基本管理制度</td>
+<td style="text-align:center">⑥</td>
+<td>较大负债</td>
+<td>个人因所负数额较大债务到期未清偿被人民法院列为<strong>失信被执行人</strong></td>
 </tr>
 </tbody>
-</table></div><p><strong>议事规则</strong>（第68条、第73条）：</p>
+</table></div><h3 id="三-不适格董监高的处理方式">（三）不适格董监高的处理方式</h3>
+<ol>
+<li>违反规定选举、委派董事、监事或者聘任高级管理人员的，该选举、委派或者聘任<strong>无效</strong></li>
+<li>董事、监事、高级管理人员在任职期间出现不得担任董监高情形的，公司应当<strong>解除其职务</strong></li>
+</ol>
+<p>▲ <strong>实务要点</strong>：不适格董监高的选举/聘任为无效，而非可撤销，属于自始无效，不因时间经过而补正。公司在招聘董事、监事时应当做好任职资格审查。</p>
+<h3 id="四-董事的任期与辞任">（四）董事的任期与辞任</h3>
 <ul>
-<li>董事会决议的表决，实行一人一票</li>
-<li>董事会决议的表决，应当有过半数的董事出席方可举行；董事会作出决议，必须经全体董事的过半数通过</li>
+<li>董事任期由公司章程规定，每届任期不得超过三年，任期届满可以连选连任（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC70%E6%9D%A1">第70条</a>）</li>
+<li>董事任期届满未及时改选，或者董事在任期内辞任导致董事会成员低于法定人数的，在改选出的董事就任前，原董事仍应当履行董事职务</li>
+<li>董事辞任的，应当以书面形式通知公司，公司收到通知之日辞任生效</li>
 </ul>
-<h4 id="4-董事的忠实义务与勤勉义务">4. ◆ 董事的忠实义务与勤勉义务</h4>
+<hr>
+<h2 id="三-董监高的义务">三、董监高的义务</h2>
+<h3 id="一-忠实义务与勤勉义务">（一）忠实义务与勤勉义务</h3>
 <p><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC180%E6%9D%A1">《公司法》第180条</a>是新公司法的核心条款之一，首次以立法形式明确界定了忠实义务与勤勉义务的内涵：</p>
-<p><strong>忠实义务</strong>（第180条第1款）：</p>
+<p><strong>忠实义务</strong>（第1款）：</p>
 <blockquote>
 <p>董事、监事、高级管理人员对公司负有忠实义务，应当采取措施避免自身利益与公司利益冲突，不得利用职权牟取不正当利益。</p>
 </blockquote>
-<p><strong>勤勉义务</strong>（第180条第2款）：</p>
+<p><strong>勤勉义务</strong>（第2款）：</p>
 <blockquote>
 <p>董事、监事、高级管理人员对公司负有勤勉义务，执行职务应当为公司的最大利益尽到管理者通常应有的合理注意。</p>
 </blockquote>
-<p>▲ <strong>实务重难点</strong>：忠实义务的核心是&quot;避免利益冲突&quot;，强调主观上的忠诚；勤勉义务的核心是&quot;合理注意&quot;，强调客观上的尽职。违反忠实义务的行为通常直接导致行为无效或可撤销，并可能触发归入权；违反勤勉义务则需以商业判断规则（Business Judgment Rule）为标准进行判断。</p>
-<p>◆ <strong>实质董事</strong>：公司的控股股东、实际控制人不担任公司董事但实际执行公司事务的，适用忠实义务和勤勉义务的规定。</p>
-<h4 id="5-董事的禁止行为">5. 董事的禁止行为</h4>
-<p><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC181%E6%9D%A1">《公司法》第181条</a>明确列举了董事、监事、高级管理人员的禁止行为：</p>
+<p>◆ <strong>实质董事</strong>（第3款）：</p>
+<blockquote>
+<p>公司的控股股东、实际控制人不担任公司董事但实际执行公司事务的，适用忠实义务和勤勉义务的规定。</p>
+</blockquote>
+<p>▲ <strong>实务重难点</strong>：</p>
+<ul>
+<li>忠实义务的核心是&quot;避免利益冲突&quot;，强调主观上的忠诚；违反忠实义务的行为通常直接导致行为无效或可撤销，并可能触发归入权</li>
+<li>勤勉义务的核心是&quot;合理注意&quot;，强调客观上的尽职；违反勤勉义务则需以商业判断规则（Business Judgment Rule）为标准进行判断</li>
+<li>实质董事制度意味着不担任董事的控股股东、实际控制人，只要实际执行公司事务，同样受忠实义务和勤勉义务约束</li>
+</ul>
+<h3 id="二-董监高的禁止行为">（二）董监高的禁止行为</h3>
+<p><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC181%E6%9D%A1">《公司法》第181条</a>明确列举了董监高的六项禁止行为：</p>
 <ol>
 <li><strong>侵占公司财产、挪用公司资金</strong></li>
 <li><strong>将公司资金以其个人名义或者以其他个人名义开立账户存储</strong></li>
@@ -128,45 +155,90 @@
 <li><strong>擅自披露公司秘密</strong></li>
 <li><strong>违反对公司忠实义务的其他行为</strong></li>
 </ol>
+<h3 id="三-自我交易-关联交易规制">（三）自我交易（关联交易规制）</h3>
+<p><strong><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC182%E6%9D%A1">《公司法》第182条</a></strong>：</p>
+<p>董事、监事、高级管理人员，直接或者间接与本公司订立合同或者进行交易，应当就与订立合同或者进行交易有关的事项向董事会或者股东会报告，并按照公司章程的规定经董事会或者股东会决议通过。</p>
+<p><strong>自我交易的范围</strong>（以下主体与公司订立合同或进行交易，均属自我交易）：</p>
+<ol>
+<li>董事、监事、高级管理人员本人</li>
+<li>董事、监事、高级管理人员的<strong>近亲属</strong></li>
+<li>董事、监事、高级管理人员或者其近亲属<strong>直接或者间接控制的企业</strong></li>
+<li>与董事、监事、高级管理人员有<strong>其他关联关系的关联人</strong></li>
+</ol>
+<p><strong>关联交易的程序要求</strong>：</p>
+<ol>
+<li><strong>报告义务</strong>：应当就与订立合同或者进行交易有关的事项向董事会或者股东会报告</li>
+<li><strong>决议</strong>：按照公司章程的规定经董事会或者股东会决议通过</li>
+<li><strong>关联董事回避</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC185%E6%9D%A1">第185条</a>）：关联董事不得参与表决，其表决权不计入表决权总数</li>
+<li><strong>人数不足的处理</strong>：出席董事会会议的无关联关系董事人数不足3人的，应当将该事项提交股东会审议</li>
+</ol>
+<h3 id="四-谋取公司商业机会">（四）谋取公司商业机会</h3>
+<p><strong><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC183%E6%9D%A1">《公司法》第183条</a></strong>：</p>
+<p><strong>原则</strong>：董事、监事、高级管理人员<strong>不得</strong>利用职务便利为自己或者他人谋取属于公司的商业机会。</p>
+<p><strong>例外</strong>（以下两种情形，董监高可以谋取公司商业机会）：</p>
+<ol>
+<li>向董事会或者股东会<strong>报告</strong>，并按照公司章程的规定经董事会或者股东会<strong>决议通过</strong></li>
+<li>根据法律、行政法规或者公司章程的规定，<strong>公司不能利用该商业机会</strong></li>
+</ol>
+<p><strong>&quot;属于公司的商业机会&quot;的判断标准</strong>：</p>
+<ul>
+<li>公司是否已在就该商业机会进行谈判或投入资源</li>
+<li>该商业机会是否与公司现有业务密切相关</li>
+<li>公司是否有能力和资源利用该商业机会</li>
+</ul>
+<h3 id="五-竞业禁止义务">（五）竞业禁止义务</h3>
+<p><strong><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC184%E6%9D%A1">《公司法》第184条</a></strong>：</p>
 <blockquote>
-<p><strong>注意</strong>：第181条的禁止行为为6项，知识库原列8项中第3、4、5项实际分别对应自我交易（第182条）、商业机会篡夺（第184条）、竞业禁止（第183条）的独立条款，非第181条内容。第181条新增&quot;侵占公司财产&quot;和&quot;利用职权贿赂或者收受其他非法收入&quot;两项。</p>
+<p>董事、监事、高级管理人员未向董事会或者股东会报告，并经董事会或者股东会决议通过，不得自营或者为他人经营与其任职公司同类的业务。</p>
 </blockquote>
-<h4 id="6-审计委员会制度">6. 审计委员会制度</h4>
+<p><strong>违反竞业禁止的法律后果</strong>：</p>
+<ul>
+<li>归入权：所得收入归公司所有（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC186%E6%9D%A1">第186条</a>）</li>
+<li>赔偿责任：给公司造成损失的，应当承担赔偿责任（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC188%E6%9D%A1">第188条</a>）</li>
+</ul>
+<h3 id="六-归入权">（六）归入权</h3>
+<p><strong><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC186%E6%9D%A1">《公司法》第186条</a></strong>：</p>
+<blockquote>
+<p>董事、监事、高级管理人员违反本法第一百八十一条至第一百八十四条规定所得的收入应当归公司所有。</p>
+</blockquote>
+<p><strong>归入权的适用范围</strong>：违反禁止行为（第181条）、自我交易（第182条）、谋取公司商业机会（第183条）、竞业限制（第184条）所得的收入均应归公司所有。</p>
+<hr>
+<h2 id="四-审计委员会制度">四、审计委员会制度</h2>
 <p>◆ <strong>新公司法重大创新</strong>——<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC69%E6%9D%A1">《公司法》第69条</a>：</p>
 <blockquote>
-<p>有限责任公司可以按照公司章程的规定在董事会中设置由董事组成的审计委员会，行使本法规定的监事会的职权，不设监事会或者监事。</p>
+<p>有限责任公司可以按照公司章程的规定在董事会中设置由董事组成的审计委员会，行使本法规定的监事会的职权，不设监事会或者监事。公司董事会成员中的职工代表可以成为审计委员会成员。</p>
 </blockquote>
-<p>这一制度变革的意义：</p>
+<p><strong>这一制度变革的意义</strong>：</p>
 <ul>
 <li><strong>单层制治理模式</strong>的引入：公司可以选择&quot;董事会+监事会&quot;的传统双层制，也可以选择&quot;董事会（含审计委员会）&quot;的单层制</li>
 <li>审计委员会成员应当为三名以上，其中过半数成员不得在公司担任除董事以外的其他职务</li>
-<li>上市公司必须设置审计委员会（第136条）</li>
+<li>上市公司在董事会中设置审计委员会的，特定事项应当经审计委员会全体成员过半数通过（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC137%E6%9D%A1">第137条</a>）</li>
 </ul>
 <hr>
-<h3 id="二-监事制度">（二）监事制度</h3>
-<h4 id="1-监事的资格与选任">1. 监事的资格与选任</h4>
+<h2 id="五-监事会制度">五、监事会制度</h2>
+<h3 id="一-监事会的组成">（一）监事会的组成</h3>
+<p><strong>有限责任公司</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC76%E6%9D%A1">第76条</a>）：</p>
 <ul>
-<li>监事由股东会选举和更换（第59条）</li>
-<li>董事、高级管理人员不得兼任监事（第130条）</li>
-<li>监事的消极任职资格与董事相同</li>
+<li>监事会成员为三人以上</li>
+<li>监事会成员应当包括股东代表和适当比例的公司职工代表，其中职工代表的比例不得低于三分之一</li>
+<li>董事、高级管理人员不得兼任监事</li>
 </ul>
-<h4 id="2-监事会的组成与职权">2. 监事会的组成与职权</h4>
-<p><strong>组成</strong>（第130条）：</p>
+<p><strong>简化治理</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC83%E6%9D%A1">第83条</a>）：</p>
 <ul>
-<li>有限责任公司设监事会，其成员不得少于三人</li>
-<li>股东人数较少或者规模较小的有限责任公司，可以不设监事会，设一至二名监事</li>
-<li>监事会应当包括股东代表和适当比例的公司职工代表，其中职工代表的比例不得低于三分之一</li>
+<li>规模较小或者股东人数较少的有限责任公司，可以不设监事会，设一名监事</li>
+<li>经全体股东一致同意，也可以不设监事</li>
 </ul>
-<p><strong>职权</strong>（第131条）：</p>
-<ul>
+<h3 id="二-监事会的职权">（二）监事会的职权</h3>
+<p><strong><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC78%E6%9D%A1">第78条</a></strong>：</p>
+<ol>
 <li>检查公司财务</li>
-<li>对董事、高级管理人员执行职务的行为进行监督</li>
+<li>对董事、高级管理人员执行职务的行为进行监督，对违反法律、行政法规、公司章程或者股东会决议的董事、高级管理人员提出解任的建议</li>
 <li>当董事、高级管理人员的行为损害公司的利益时，要求董事、高级管理人员予以纠正</li>
-<li>提议召开临时股东会会议</li>
+<li>提议召开临时股东会会议，在董事会不履行召集和主持股东会会议职责时召集和主持股东会会议</li>
 <li>向股东会会议提出提案</li>
 <li>依照<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC189%E6%9D%A1">《公司法》第189条</a>的规定，对董事、高级管理人员提起诉讼</li>
-</ul>
-<h4 id="3-新公司法-监事会vs审计委员会的选择">3. 新公司法：监事会vs审计委员会的选择</h4>
+</ol>
+<h3 id="三-监事会-vs-审计委员会的选择">（三）监事会 vs 审计委员会的选择</h3>
 <div class="table-wrapper"><table><thead>
 <tr>
 <th>比较维度</th>
@@ -177,8 +249,8 @@
 <tbody>
 <tr>
 <td>设置依据</td>
-<td>第130条</td>
-<td>第69条</td>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC76%E6%9D%A1">第76条</a></td>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC69%E6%9D%A1">第69条</a></td>
 </tr>
 <tr>
 <td>组成</td>
@@ -193,38 +265,50 @@
 <tr>
 <td>上市公司</td>
 <td>可选</td>
-<td>必须设置</td>
+<td>须按要求设置</td>
 </tr>
 <tr>
 <td>行使职权</td>
 <td>法定职权</td>
 <td>代行监事会职权</td>
 </tr>
+<tr>
+<td>职工代表</td>
+<td>必须有（≥1/3）</td>
+<td>董事会中的职工代表可成为成员</td>
+</tr>
 </tbody>
 </table></div><hr>
-<h3 id="三-高级管理人员">（三）高级管理人员</h3>
-<p><strong>范围</strong>（第217条）：</p>
+<h2 id="六-高级管理人员">六、高级管理人员</h2>
+<p><strong>范围</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC265%E6%9D%A1">第265条</a>）：</p>
 <ul>
 <li>经理、副经理</li>
 <li>财务负责人</li>
 <li>上市公司董事会秘书</li>
 <li>公司章程规定的其他人员</li>
 </ul>
-<p><strong>经理的职权</strong>（第74条）：
-经理对董事会负责，行使下列职权：主持公司的生产经营管理工作，组织实施董事会决议；组织实施公司年度经营计划和投资方案；拟订公司内部管理机构设置方案；拟订公司的基本管理制度等。</p>
+<p><strong>经理的职权</strong>（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC74%E6%9D%A1">第74条</a>）：</p>
+<ul>
+<li>经理对董事会负责，根据公司章程的规定或者董事会的授权行使职权</li>
+<li>主持公司的生产经营管理工作，组织实施董事会决议</li>
+<li>组织实施公司年度经营计划和投资方案</li>
+<li>拟订公司内部管理机构设置方案</li>
+<li>拟订公司的基本管理制度</li>
+<li>经理列席董事会会议</li>
+</ul>
 <hr>
-<h3 id="四-董事-高管的赔偿责任">（四）▲ 董事、高管的赔偿责任</h3>
-<h4 id="1-对公司的赔偿责任">1. 对公司的赔偿责任</h4>
+<h2 id="七-董监高的责任体系">七、董监高的责任体系</h2>
+<h3 id="一-对公司的赔偿责任">（一）对公司的赔偿责任</h3>
 <p><strong><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC188%E6%9D%A1">《公司法》第188条</a></strong>：</p>
 <blockquote>
 <p>董事、监事、高级管理人员执行职务违反法律、行政法规或者公司章程的规定，给公司造成损失的，应当承担赔偿责任。</p>
 </blockquote>
-<h4 id="2-对第三人的赔偿责任">2. 对第三人的赔偿责任</h4>
+<h3 id="二-对第三人的赔偿责任">（二）对第三人的赔偿责任</h3>
 <p><strong><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC191%E6%9D%A1">《公司法》第191条</a></strong>（新公司法新增）：</p>
 <blockquote>
 <p>董事、高级管理人员执行职务，给他人造成损害的，公司应当承担赔偿责任；董事、高级管理人员存在故意或者重大过失的，也应当承担赔偿责任。</p>
 </blockquote>
-<p>▲ <strong>实务重难点</strong>：第191条突破了传统公司法中董事不对第三人直接承担责任的原则，是新公司法的重大突破。但该条的适用条件限于&quot;故意或者重大过失&quot;，一般过失不构成对第三人的直接赔偿责任。</p>
+<p>▲ <strong>实务重难点</strong>：<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC191%E6%9D%A1">第191条</a>突破了传统公司法中董事不对第三人直接承担责任的原则，是新公司法的重大突破。但该条的适用条件限于&quot;故意或者重大过失&quot;，一般过失不构成对第三人的直接赔偿责任。</p>
 <p><strong>一般员工职务侵权 vs 董高职务侵权对比</strong>：</p>
 <div class="table-wrapper"><table><thead>
 <tr>
@@ -250,12 +334,12 @@
 <td>公司可向有故意或重大过失的董高追偿</td>
 </tr>
 </tbody>
-</table></div><h4 id="4-5-影子董事-高管-第192条">4.5 影子董事、高管（第192条）</h4>
-<p>◆ <strong><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC192%E6%9D%A1">《公司法》第192条</a></strong>：</p>
+</table></div><h3 id="三-影子董事-高管的连带责任">（三）影子董事、高管的连带责任</h3>
+<p><strong><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC192%E6%9D%A1">《公司法》第192条</a></strong>：</p>
 <blockquote>
 <p>公司的控股股东、实际控制人指示董事、高级管理人员从事损害公司或者股东利益的行为的，与该董事、高级管理人员承担<strong>连带责任</strong>。</p>
 </blockquote>
-<h4 id="3-股东代表诉讼">3. 股东代表诉讼</h4>
+<h3 id="四-股东代表诉讼">（四）股东代表诉讼</h3>
 <p><strong><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC189%E6%9D%A1">《公司法》第189条</a></strong>（法条原文）：</p>
 <blockquote>
 <p>董事、高级管理人员有前条规定的情形的，有限责任公司的股东、股份有限公司连续一百八十日以上单独或者合计持有公司百分之一以上股份的股东，可以书面请求监事会向人民法院提起诉讼；监事有前条规定的情形的，前述股东可以书面请求董事会向人民法院提起诉讼。</p>
@@ -305,7 +389,7 @@
 <p><strong>内部机构不起诉时，股东可以起诉的三种情形</strong>：</p>
 <ol>
 <li>监事会或董事会收到股东书面请求后<strong>拒绝</strong>提起诉讼</li>
-<li>监事会或董事会自收到股东书面请求之日起<strong>30日内</strong>未提起诉讼</li>
+<li>监事会或董事会自收到请求之日起<strong>30日内</strong>未提起诉讼</li>
 <li><strong>情况紧急</strong>、不立即提起诉讼将会使公司利益受到难以弥补的损害</li>
 </ol>
 <p><strong>无须履行前置程序的情形</strong>（股东可以直接起诉）：</p>
@@ -328,9 +412,12 @@
 <li>公司的控股股东、实际控制人、董事、监事、高级管理人员利用其关联关系损害公司利益，公司没有提起诉讼的，符合代表诉讼规定条件的股东，可以按照代表诉讼的相关规定向人民法院提起诉讼</li>
 <li>关联交易合同存在无效、可撤销或者对公司不发生效力的情形，公司没有起诉合同相对方的，符合条件的股东依法提起股东代表诉讼的，人民法院应予受理</li>
 </ol>
-<h4 id="5-股东的直接诉讼">5. 股东的直接诉讼</h4>
+<h3 id="五-股东的直接诉讼">（五）股东的直接诉讼</h3>
+<p><strong><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC190%E6%9D%A1">《公司法》第190条</a></strong>：</p>
+<blockquote>
 <p>董事、高级管理人员违反法律、行政法规或者公司章程的规定，损害股东利益的，股东可以向人民法院提起诉讼。</p>
-<p><strong>【归纳总结】直接诉讼与代表诉讼对比</strong>：</p>
+</blockquote>
+<p><strong>直接诉讼与代表诉讼对比</strong>：</p>
 <div class="table-wrapper"><table><thead>
 <tr>
 <th>比较维度</th>
@@ -365,203 +452,137 @@
 <td>公司/全资子公司</td>
 </tr>
 </tbody>
-</table></div><h4 id="4-归入权">4. 归入权</h4>
-<p><strong><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC186%E6%9D%A1">《公司法》第186条</a></strong>：</p>
-<blockquote>
-<p>董事、监事、高级管理人员违反本法第一百八十一条至第一百八十四条规定所得的收入应当归公司所有。</p>
-</blockquote>
-<p><strong>归入权的适用范围</strong>：违反禁止行为（第181条）、自我交易（第182条）、谋取公司商业机会（第183条）、竞业限制（第184条）所得的收入均应归公司所有。</p>
-<hr>
-<h3 id="五-关联交易规制-自我交易">（五）◆ 关联交易规制（自我交易）</h3>
-<p><strong><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC182%E6%9D%A1">《公司法》第182条</a></strong>：</p>
-<p>董事、监事、高级管理人员，直接或者间接与本公司订立合同或者进行交易，应当就与订立合同或者进行交易有关的事项向董事会或者股东会报告，并按照公司章程的规定经董事会或者股东会决议通过。</p>
-<p><strong>自我交易的范围</strong>（以下主体与公司订立合同或进行交易，均属自我交易）：</p>
-<ol>
-<li>董事、监事、高级管理人员本人</li>
-<li>董事、监事、高级管理人员的<strong>近亲属</strong></li>
-<li>董事、监事、高级管理人员或者其近亲属<strong>直接或者间接控制的企业</strong></li>
-<li>与董事、监事、高级管理人员有<strong>其他关联关系的关联人</strong></li>
-</ol>
-<p><strong>关联交易的程序要求</strong>：</p>
-<ol>
-<li><strong>报告义务</strong>：应当就与订立合同或者进行交易有关的事项向董事会或者股东会报告</li>
-<li><strong>决议</strong>：按照公司章程的规定经董事会或者股东会决议通过</li>
-<li><strong>回避制度</strong>：关联董事不得参与表决，其表决权不计入表决权总数（第139条）</li>
-<li><strong>人数不足的处理</strong>：出席董事会会议的无关联关系董事人数不足3人的，应当将该事项提交股东会审议</li>
-</ol>
-<p>▲ <strong>实务重难点</strong>：新公司法将关联交易的规制范围扩展至&quot;直接或者间接&quot;与本公司进行交易，包括关联人通过其控制的其他企业与公司进行的交易，大幅扩大了关联交易的监管覆盖面。</p>
-<hr>
-<h3 id="六-竞业禁止与商业机会篡夺">（六）◆ 竞业禁止与商业机会篡夺</h3>
-<h4 id="竞业禁止义务-第183条">竞业禁止义务（第183条）</h4>
-<blockquote>
-<p>董事、监事、高级管理人员未向董事会或者股东会报告，并经董事会或者股东会决议通过，不得自营或者为他人经营与所任职公司同类的业务。</p>
-</blockquote>
-<p><strong>违反竞业禁止的法律后果</strong>：</p>
-<ul>
-<li>归入权：所得收入归公司所有（第186条）</li>
-<li>赔偿责任：给公司造成损失的，应当承担赔偿责任</li>
-</ul>
-<h4 id="商业机会篡夺-第184条">商业机会篡夺（第184条）</h4>
-<blockquote>
-<p>董事、监事、高级管理人员未向董事会或者股东会报告，并经董事会或者股东会决议通过，不得利用职务便利为自己或者他人谋取属于公司的商业机会。</p>
-</blockquote>
-<p><strong>例外情形</strong>（董监高可以谋取公司商业机会的两种情形）：</p>
-<ol>
-<li>向董事会或者股东会报告，并按照公司章程的规定经董事会或者股东会决议通过</li>
-<li>根据法律、行政法规或者公司章程的规定，<strong>公司不能利用该商业机会</strong></li>
-</ol>
-<p><strong>&quot;属于公司的商业机会&quot;的判断标准</strong>：</p>
-<ul>
-<li>公司是否已在就该商业机会进行谈判或投入资源</li>
-<li>该商业机会是否与公司现有业务密切相关</li>
-<li>公司是否有能力和资源利用该商业机会</li>
-</ul>
-<hr>
-<h2 id="三-法条依据汇总">三、法条依据汇总</h2>
-<div class="table-wrapper"><table><thead>
-<tr>
-<th>条文</th>
-<th>核心内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>第59条</td>
-<td>股东会选举和更换董事、监事</td>
-</tr>
-<tr>
-<td>第70条</td>
-<td>董事任期不超过三年，可连选连任</td>
-</tr>
-<tr>
-<td>第67条</td>
-<td>董事会的职权</td>
-</tr>
-<tr>
-<td>第68条</td>
-<td>董事会的组成与议事规则</td>
-</tr>
-<tr>
-<td>第69条</td>
-<td>审计委员会制度</td>
-</tr>
-<tr>
-<td>第73条</td>
-<td>董事会决议规则</td>
-</tr>
-<tr>
-<td>第74条</td>
-<td>经理的职权</td>
-</tr>
-<tr>
-<td>第75条</td>
-<td>规模较小公司的简化治理</td>
-</tr>
-<tr>
-<td>第130条</td>
-<td>监事会的组成</td>
-</tr>
-<tr>
-<td>第131条</td>
-<td>监事会的职权</td>
-</tr>
-<tr>
-<td>第139条</td>
-<td>关联董事回避</td>
-</tr>
-<tr>
-<td>第146条</td>
-<td>董监高的消极任职资格</td>
-</tr>
-<tr>
-<td>第180条</td>
-<td>忠实义务与勤勉义务的定义</td>
-</tr>
-<tr>
-<td>第181条</td>
-<td>董监高的禁止行为</td>
-</tr>
-<tr>
-<td>第182条</td>
-<td>关联交易规制</td>
-</tr>
-<tr>
-<td>第183条</td>
-<td>竞业禁止义务</td>
-</tr>
-<tr>
-<td>第184条</td>
-<td>商业机会篡夺</td>
-</tr>
-<tr>
-<td>第186条</td>
-<td>归入权</td>
-</tr>
-<tr>
-<td>第188条</td>
-<td>对公司的赔偿责任</td>
-</tr>
-<tr>
-<td>第189条</td>
-<td>股东代表诉讼</td>
-</tr>
-<tr>
-<td>第191条</td>
-<td>对第三人的赔偿责任</td>
-</tr>
-<tr>
-<td>第192条</td>
-<td>影子董事、高管：控股股东/实控人指示董高损害公司利益的连带责任</td>
-</tr>
-</tbody>
 </table></div><hr>
-<h2 id="四-案例分析">四、案例分析</h2>
-<h3 id="案例-董事违反忠实义务-竞业禁止与关联交易">案例：董事违反忠实义务——竞业禁止与关联交易</h3>
+<h2 id="八-案例分析">八、案例分析</h2>
+<h3 id="案例一-不适格董监高的任职资格审查">案例一：不适格董监高的任职资格审查</h3>
+<p><strong>【案情】</strong></p>
+<p>某市甲有限责任公司于2024年7月依法成立，拟从以下候选人中选任董事：</p>
+<ol>
+<li><strong>王某</strong>：曾因担任企业负责人犯重大责任事故罪于2021年8月被判处3年有期徒刑，2024年7月刑满释放</li>
+<li><strong>张某</strong>：与他人共同投资设立一家有限责任公司并持股70%，该公司长期经营不善于2023年被宣告破产</li>
+<li><strong>徐某</strong>：2022年向他人借款100万元，为期2年，因资金被股市套牢至今未清偿，被法院列为失信被执行人</li>
+<li><strong>赵某</strong>：曾任某音像公司董事长，该公司因未经著作权人许可大量复制音像制品于2023年5月被市场监管部门吊销营业执照，赵某负有个人责任</li>
+</ol>
+<p><strong>【法律分析】</strong></p>
+<p>根据<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC178%E6%9D%A1">《公司法》第178条</a>，不得担任董监高的情形逐一分析：</p>
+<ol>
+<li><strong>王某</strong>：虽然有犯罪行为，但重大责任事故罪不属于&quot;贪污、贿赂、侵占财产、挪用财产或者破坏社会主义市场经济秩序&quot;的犯罪类型，不符合第178条第②项（经济犯罪）的限制条件。<strong>王某可以担任董事</strong>。</li>
+<li><strong>张某</strong>：虽然存在公司破产，但张某是该公司<strong>股东</strong>，并非董事、经理、厂长，不属于第178条第④项（破产清算）规定的限制主体。<strong>张某可以担任董事</strong>。</li>
+<li><strong>徐某</strong>：所负数额较大的债务到期无法清偿，且被法院列为失信被执行人，属于第178条第⑥项（较大负债）的限制情形。<strong>徐某不得担任董事</strong>。</li>
+<li><strong>赵某</strong>：虽然某音像公司因违法被吊销营业执照，但赵某并未在该公司担任<strong>法定代表人</strong>，不属于第178条第⑤项（违法被关闭）规定的限制主体。<strong>赵某可以担任董事</strong>。</li>
+</ol>
+<p><strong>【实务要点】</strong></p>
+<p>董监高任职资格审查应逐一对照第178条第①至⑥项条件，特别注意各限制条件的<strong>主体范围和时间要求</strong>。</p>
+<p><strong>【实务启示】</strong></p>
+<p>▲ （1）公司在选任董监高时应进行详尽的任职资格审查，包括犯罪记录、失信被执行人信息、任职历史等；（2）经济犯罪的限制范围仅限于破坏社会主义市场经济秩序的特定罪名，非所有犯罪；（3）破产清算和违法吊销的限制限于特定职务人员（董事/厂长/经理/法定代表人），非所有参与人员。</p>
+<h3 id="案例二-违反忠实义务-竞业禁止与关联交易">案例二：违反忠实义务——竞业禁止与关联交易</h3>
 <p><strong>【案情】</strong></p>
 <p>张某是某市知名连锁餐饮企业盛和楼餐饮管理有限公司的董事兼运营副总。2023年起，张某在未向公司董事会或股东会报告的情况下，以其配偶名义注册成立了聚味坊餐饮有限公司，经营与盛和楼同类型的中式正餐业务。张某利用在盛和楼的职务便利，将盛和楼积累的供应商资源和大客户渠道转介给聚味坊，并将盛和楼三家门店的区域经理调至聚味坊任职。</p>
 <p>2024年底，盛和楼发现其华东区域营业收入同比下降35%，而聚味坊同期在相同商圈快速扩张。盛和楼审计后发现张某的行为，遂诉至法院。</p>
 <p><strong>【法律分析】</strong></p>
 <ol>
 <li>
-<p><strong>竞业禁止违反</strong>：张某以配偶名义经营同类餐饮业务，属于<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC183%E6%9D%A1">《公司法》第183条</a>规定的&quot;为他人经营与所任职公司同类的业务&quot;，构成竞业禁止义务的违反</p>
+<p><strong>竞业禁止违反</strong>：张某以配偶名义经营同类餐饮业务，构成<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC184%E6%9D%A1">《公司法》第184条</a>规定的&quot;为他人经营与所任职公司同类的业务&quot;，且未经报告和决议程序</p>
 </li>
 <li>
-<p><strong>关联交易违反</strong>：张某未就其与聚味坊的关联关系向董事会或股东会报告，违反第182条的关联交易报告义务和决议程序</p>
+<p><strong>关联交易违反</strong>：张某未就其与聚味坊的关联关系向董事会或股东会报告，违反<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC182%E6%9D%A1">第182条</a>的关联交易报告义务和决议程序。聚味坊属于&quot;董事近亲属直接或者间接控制的企业&quot;</p>
 </li>
 <li>
-<p><strong>商业机会篡夺</strong>：张某将盛和楼的客户资源和供应商渠道转介给聚味坊，构成第184条规定的&quot;利用职务便利谋取属于公司的商业机会&quot;</p>
+<p><strong>商业机会篡夺</strong>：张某将盛和楼的客户资源和供应商渠道转介给聚味坊，构成<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC183%E6%9D%A1">第183条</a>规定的&quot;利用职务便利谋取属于公司的商业机会&quot;</p>
 </li>
 <li>
 <p><strong>法律责任</strong>：</p>
 <ul>
-<li>盛和楼可依据第186条行使<strong>归入权</strong>，要求张某将聚味坊的经营所得归入公司</li>
-<li>盛和楼可依据第188条要求张某赔偿公司因客户流失和营业收入下降所遭受的损失</li>
-<li>盛和楼股东可依据第189条提起股东代表诉讼</li>
+<li>盛和楼可依据<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC186%E6%9D%A1">第186条</a>行使<strong>归入权</strong>，要求张某将聚味坊的经营所得归入公司</li>
+<li>盛和楼可依据<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC188%E6%9D%A1">第188条</a>要求张某赔偿公司因客户流失和营业收入下降所遭受的损失</li>
+<li>盛和楼股东可依据<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC189%E6%9D%A1">第189条</a>提起股东代表诉讼</li>
 </ul>
 </li>
 </ol>
+<p><strong>【实务要点】</strong></p>
+<p>董事、高管以配偶、近亲属名义经营同类业务，同样构成竞业禁止义务的违反。</p>
 <p><strong>【实务启示】</strong></p>
-<p>▲ 董事、高管以配偶、近亲属名义经营同类业务，同样构成竞业禁止义务的违反。公司应在章程和高管聘用合同中明确竞业限制范围、违约金标准和归入权的行使方式。</p>
-<h3 id="案例-影子董事与职务侵权的责任承担">案例：影子董事与职务侵权的责任承担</h3>
+<p>▲ （1）公司应在章程和高管聘用合同中明确竞业限制范围、违约金标准和归入权的行使方式；（2）董事、监事、高级管理人员的近亲属、近亲属控制的企业与公司交易，同样构成关联交易，须履行报告和决议程序；（3）关联董事在相关事项表决时应当回避，不得参与表决。</p>
+<h3 id="案例三-自我交易与关联董事回避">案例三：自我交易与关联董事回避</h3>
 <p><strong>【案情】</strong></p>
-<p>张平是兴华餐饮有限公司的法定代表人兼董事长，洪河沙是兴华公司的实际控制人，但未担任任何公司职务。2025年初，兴华公司因食品安全问题面临多起消费者维权诉讼。</p>
-<p>张平在日常管理中放任采购员采购低价不合格牛肉，造成顾客张某食物中毒住院治疗，产生医疗费及赔偿费用共计18万元。</p>
-<p>兴华公司餐厅服务员小强在2025年7月的一次上餐过程中因低头查看手机，不慎将滚烫的水煮肉片洒在顾客李某身上，造成李某二级烫伤。</p>
-<p>洪河沙得知公司面临巨额赔偿后，指示张平将兴华公司的资金和优质门店资产紧急转移至洪河沙控制的另一家公司，导致兴华公司资金链断裂，无法正常运营，也无法对张某和李某进行赔偿。</p>
+<p>甲有限公司董事会拟与某合伙企业签订场地租赁合同。该合伙企业系公司董事丁某的配偶控制。董事会会议中，丁某就交易事项进行了说明后投了弃权票，其余董事表决同意通过该租赁方案。</p>
 <p><strong>【法律分析】</strong></p>
 <ol>
 <li>
-<p><strong>张某的权利</strong>：张某有权向兴华公司主张赔偿，也有权向董事长张平主张赔偿。张平放任采购不合格食材，存在故意或重大过失，属于职务侵权。依据<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC191%E6%9D%A1">《公司法》第191条</a>，张某可以同时向公司和张平主张赔偿。</p>
+<p>丁某的配偶控制的合伙企业与甲公司交易，属于<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC182%E6%9D%A1">第182条</a>规定的自我交易——丁某属于&quot;与董事有其他关联关系的关联人&quot;控制的企业</p>
 </li>
 <li>
-<p><strong>李某的权利</strong>：李某有权向兴华公司主张赔偿，但无权直接向服务员小强主张。小强的行为属于执行工作任务中的职务侵权，依据《民法典》第1191条，由兴华公司承担侵权责任。因小强存在重大过失（看手机上餐），兴华公司赔偿后可向小强追偿。</p>
+<p>根据<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC185%E6%9D%A1">第185条</a>，关联董事<strong>不得参与表决</strong>，其表决权不计入表决权总数。丁某虽然投了弃权票，但其参与表决（包括弃权）仍然违反了回避制度的要求</p>
 </li>
 <li>
-<p><strong>兴华公司的权利</strong>：兴华公司有权主张实际控制人洪河沙与董事长张平承担连带赔偿责任。洪河沙虽未担任公司职务，但其指示张平转移公司资产，损害公司利益，属于&quot;影子董事&quot;行为。依据<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC192%E6%9D%A1">《公司法》第192条</a>，洪河沙与张平应承担连带责任。</p>
+<p>正确做法：丁某应当回避，不参与表决，由无关联关系的董事进行表决。若出席董事会的无关联关系董事不足3人，应当将该事项提交股东会审议</p>
 </li>
 </ol>
+<p><strong>【实务要点】</strong></p>
+<p>关联董事回避要求的是<strong>不得参与表决</strong>，包括不得投赞成票、反对票或弃权票。实务中关联董事应当主动披露利害关系并回避。</p>
+<p><strong>【实务启示】</strong></p>
+<p>▲ （1）公司应建立关联交易审查机制，在董事会审议前由法律顾问识别关联关系；（2）关联董事的范围不仅包括交易对方为董事本人，还包括董事的近亲属、近亲属控制的企业以及其他关联人；（3）表决权&quot;不计入表决权总数&quot;意味着关联董事的弃权票也不应计入。</p>
+<h3 id="案例四-股东代表诉讼-前置程序与诉讼规则">案例四：股东代表诉讼——前置程序与诉讼规则</h3>
+<p><strong>【案情】</strong></p>
+<p>甲、乙、丙三人共同设立蜀都商贸有限公司，出资比例分别为50%、35%、15%。甲担任公司董事长，其挪用公司资金300万元，给公司造成巨大损失。乙、丙发现后，拟通过诉讼维护公司利益。</p>
+<p><strong>【法律分析】</strong></p>
+<ol>
+<li>
+<p><strong>前置程序要求</strong>：根据<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC189%E6%9D%A1">《公司法》第189条</a>，甲作为董事长损害公司利益的，乙、丙应当<strong>书面请求监事会</strong>提起诉讼，而非直接向法院起诉，也不能请求董事会提起诉讼</p>
+</li>
+<li>
+<p><strong>原告资格</strong>：蜀都公司为有限责任公司，乙、丙作为公司股东，在提起代表诉讼时<strong>无持股比例要求</strong>（股份有限公司才有180日+1%的要求）</p>
+</li>
+<li>
+<p><strong>名义与归属</strong>：监事会不提起诉讼的，乙、丙应当<strong>以自己的名义</strong>直接向人民法院提起诉讼，而非以公司名义。所得赔偿利益<strong>归属于公司</strong>，而非股东个人</p>
+</li>
+<li>
+<p><strong>公司地位</strong>：在代表诉讼中，公司列为<strong>第三人</strong>，而非共同被告</p>
+</li>
+<li>
+<p><strong>调解规则</strong>：若乙提起代表诉讼后与甲达成和解，只有调解协议经公司<strong>股东会或董事会</strong>决议通过后，法院才能出具调解书予以确认</p>
+</li>
+<li>
+<p><strong>合理费用</strong>：乙的诉讼请求若得到法院支持，公司应当承担乙因参加诉讼支付的合理费用</p>
+</li>
+</ol>
+<p><strong>【实务要点】</strong></p>
+<p>股东代表诉讼的前置程序为法定要求，原则上必须履行交叉请求程序，否则法院应驳回起诉。</p>
+<p><strong>【实务启示】</strong></p>
+<p>▲ （1）股东发现董监高损害公司利益时，首先应查明公司是否设立了监事会或审计委员会，再决定向哪个机构提出书面请求；（2）书面请求应当明确载明请求事项、事实理由和诉讼请求，并保留送达证据；（3）收到拒绝或超过30日未起诉后，股东应尽快提起诉讼，避免诉讼时效经过。</p>
+<h3 id="案例五-影子董事与职务侵权的责任承担">案例五：影子董事与职务侵权的责任承担</h3>
+<p><strong>【案情】</strong></p>
+<p>张平是兴华餐饮有限公司（以下简称&quot;兴华公司&quot;）的董事长，洪河沙是兴华公司的实际控制人，但未担任任何公司职务。2025年初，兴华公司因食品安全问题面临多起消费者维权诉讼。</p>
+<p>张平在日常管理中放任采购员采购低价不合格牛肉，造成顾客张三食物中毒住院治疗，产生医疗费及赔偿费用共计18万元。兴华公司餐厅服务员小强在一次上餐过程中因低头查看手机，不慎将滚烫的水煮肉片洒在顾客李四身上，造成李四二级烫伤。</p>
+<p>洪河沙得知公司面临巨额赔偿后，指示张平将兴华公司的资金和优质门店资产紧急转移至洪河沙控制的另一家公司，导致兴华公司资金链断裂，无法正常运营，也无法对张三和李四进行赔偿。</p>
+<p><strong>【法律分析】</strong></p>
+<ol>
+<li>
+<p><strong>张三的权利</strong>：张三有权向兴华公司主张赔偿，也有权向董事长张平主张赔偿。张平放任采购不合格食材，属于执行职务行为中的<strong>故意</strong>侵权。依据<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC191%E6%9D%A1">《公司法》第191条</a>，董事执行职务存在故意给他人造成损害的，应当承担赔偿责任。因此张三可以同时向公司和张平主张赔偿</p>
+</li>
+<li>
+<p><strong>李四的权利</strong>：李四有权向兴华公司主张赔偿，但<strong>无权直接向服务员小强主张</strong>。小强的行为属于执行工作任务中的职务侵权，依据《民法典》第1191条，由兴华公司承担侵权责任。因小强存在重大过失（看手机上餐），兴华公司赔偿后可向小强追偿，但李四不能直接要求小强承担责任</p>
+</li>
+<li>
+<p><strong>兴华公司的权利</strong>：兴华公司有权主张实际控制人洪河沙与董事长张平承担<strong>连带赔偿责任</strong>。洪河沙虽未担任公司职务，但其指示张平转移公司资产，损害公司利益，属于&quot;影子董事&quot;行为。依据<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC192%E6%9D%A1">《公司法》第192条</a>，控股股东、实际控制人指示董事从事损害公司利益行为的，与该董事承担连带责任</p>
+</li>
+</ol>
+<p><strong>【实务要点】</strong></p>
+<p>新公司法建立了多层次的董监高责任体系：对公司的赔偿责任（第188条）、对第三人的赔偿责任（第191条）、影子董事连带责任（第192条），三者可以同时适用。</p>
+<p><strong>【实务启示】</strong></p>
+<p>▲ （1）第三人（如债权人、消费者）在董高存在故意或重大过失时，可以直接向董高主张赔偿，无需通过股东代表诉讼；（2）控股股东、实际控制人虽不担任公司职务，但若实际指示公司经营决策，将被视为&quot;实质董事&quot;或&quot;影子董事&quot;，承担连带责任；（3）公司应为董事投保责任保险（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC193%E6%9D%A1">第193条</a>），以分散执业风险。</p>
+<h3 id="案例六-谋取公司商业机会的例外情形">案例六：谋取公司商业机会的例外情形</h3>
+<p><strong>【案情】</strong></p>
+<p>乙是某建设工程公司的总经理。因公司不具备建设资质，他人向乙所在公司推荐了一个建设工程项目。乙未向股东会报告，即将该工程项目介绍给另一家具备资质的建设公司。</p>
+<p><strong>【法律分析】</strong></p>
+<p>根据<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC183%E6%9D%A1">《公司法》第183条</a>，董事、高级管理人员不得利用职务便利为自己或者他人谋取属于公司的商业机会，但有两种例外情形。</p>
+<p>本案中，乙将他人推荐给公司的建设工程项目介绍给其他公司，表面上属于&quot;为他人谋取公司商业机会&quot;。但根据法律规定的例外，根据法律、行政法规或者公司章程的规定，<strong>公司不能利用该商业机会</strong>的除外——乙所在公司不具备建设资质，客观上无法利用该商业机会。因此乙的行为属于合法的例外情形。</p>
+<p><strong>【实务要点】</strong></p>
+<p>判断是否构成&quot;谋取公司商业机会&quot;，核心在于判断该商业机会是否属于&quot;公司可以利用&quot;的商业机会。公司因资质、能力等原因无法利用的，董监高可以合法获取。</p>
+<p><strong>【实务启示】</strong></p>
+<p>▲ （1）董监高在商业机会问题上，应首先评估公司是否有能力和资质利用该机会；（2）即使公司不能利用，建议仍履行报告程序以避免争议；（3）&quot;公司不能利用&quot;应有客观依据，如资质限制、法律法规禁止等。</p>
 <hr>
-<h2 id="五-对比归纳">五、对比归纳</h2>
+<h2 id="九-对比归纳">九、对比归纳</h2>
 <h3 id="董事-监事-高级管理人员义务对比">董事、监事、高级管理人员义务对比</h3>
 <div class="table-wrapper"><table><thead>
 <tr>
@@ -574,39 +595,39 @@
 <tbody>
 <tr>
 <td>忠实义务</td>
-<td>● 第180条</td>
-<td>● 第180条</td>
-<td>● 第180条</td>
+<td>● <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC180%E6%9D%A1">第180条</a></td>
+<td>● <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC180%E6%9D%A1">第180条</a></td>
+<td>● <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC180%E6%9D%A1">第180条</a></td>
 </tr>
 <tr>
 <td>勤勉义务</td>
-<td>● 第180条</td>
-<td>● 第180条</td>
-<td>● 第180条</td>
+<td>● <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC180%E6%9D%A1">第180条</a></td>
+<td>● <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC180%E6%9D%A1">第180条</a></td>
+<td>● <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC180%E6%9D%A1">第180条</a></td>
 </tr>
 <tr>
 <td>竞业禁止</td>
-<td>● 第183条</td>
-<td>● 第183条</td>
-<td>● 第183条</td>
+<td>● <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC184%E6%9D%A1">第184条</a></td>
+<td>● <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC184%E6%9D%A1">第184条</a></td>
+<td>● <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC184%E6%9D%A1">第184条</a></td>
 </tr>
 <tr>
 <td>关联交易限制</td>
-<td>● 第182条</td>
-<td>● 第182条</td>
-<td>● 第182条</td>
+<td>● <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC182%E6%9D%A1">第182条</a></td>
+<td>● <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC182%E6%9D%A1">第182条</a></td>
+<td>● <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC182%E6%9D%A1">第182条</a></td>
 </tr>
 <tr>
 <td>对公司赔偿</td>
-<td>● 第188条</td>
-<td>● 第188条</td>
-<td>● 第188条</td>
+<td>● <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC188%E6%9D%A1">第188条</a></td>
+<td>● <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC188%E6%9D%A1">第188条</a></td>
+<td>● <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC188%E6%9D%A1">第188条</a></td>
 </tr>
 <tr>
 <td>对第三人赔偿</td>
-<td>● 第191条</td>
+<td>● <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC191%E6%9D%A1">第191条</a></td>
 <td>○</td>
-<td>● 第191条</td>
+<td>● <a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC191%E6%9D%A1">第191条</a></td>
 </tr>
 <tr>
 <td>股东代表诉讼</td>
@@ -619,8 +640,8 @@
 <div class="table-wrapper"><table><thead>
 <tr>
 <th>比较维度</th>
-<th>董事、高管（第191条）</th>
-<th>影子董事/高管（第192条）</th>
+<th>董事、高管（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC191%E6%9D%A1">第191条</a>）</th>
+<th>影子董事/高管（<a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC192%E6%9D%A1">第192条</a>）</th>
 </tr>
 </thead>
 <tbody>
@@ -651,8 +672,8 @@
 <tbody>
 <tr>
 <td>法律依据</td>
-<td>第180条第1款</td>
-<td>第180条第2款</td>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC180%E6%9D%A1">第180条</a>第1款</td>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC180%E6%9D%A1">第180条</a>第2款</td>
 </tr>
 <tr>
 <td>核心要求</td>
@@ -686,16 +707,129 @@
 </tr>
 </tbody>
 </table></div><hr>
-<h2 id="六-实务要点">六、实务要点</h2>
-<ol>
-<li><strong>新公司法的治理结构选择</strong>：公司应在章程中明确选择监事会模式或审计委员会模式，两种模式不得并存</li>
-<li><strong>忠实义务的合规要点</strong>：关联交易、竞业行为必须履行报告义务并取得董事会或股东会的批准，且关联方应当回避表决</li>
-<li><strong>股东代表诉讼的实务操作</strong>：注意前置程序的要求，书面请求应当明确诉讼请求和事实理由</li>
-<li><strong>第191条的实务影响</strong>：债权人等第三人获得了直接向董事、高管主张赔偿的请求权基础，但需证明&quot;故意或者重大过失&quot;</li>
-<li><strong>审计委员会的组成要求</strong>：上市公司审计委员会的独立董事应当占多数，且至少一名独立董事为会计专业人士</li>
-</ol>
-<hr>
-<p><strong>相关章节</strong>：<a href="/gongsi-kb/articles/%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E4%BC%9A%E8%AE%A1%E5%88%B6%E5%BA%A6/">📋 公司法知识库/08-公司财务会计</a> | <a href="/gongsi-kb/articles/%E5%85%AC%E5%8F%B8%E9%87%8D%E5%A4%A7%E5%8F%98%E6%9B%B4/">📋 公司法知识库/09-公司重大变更</a> | <a href="/gongsi-kb/articles/%E7%8E%8B%E6%AF%93%E8%8E%B9%E6%95%99%E6%8E%88%E5%85%AC%E5%8F%B8%E6%B3%95%E5%AD%A6%E6%9C%AF%E8%A7%82%E7%82%B9/">学者观点：王毓莹</a>（催缴义务=信义义务=勤勉义务；体系化董事责任制度；控股股东违信责任）</p>
+<h2 id="十-法条依据汇总">十、法条依据汇总</h2>
+<div class="table-wrapper"><table><thead>
+<tr>
+<th>条文</th>
+<th>核心内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC11%E6%9D%A1">第11条</a></td>
+<td>法定代表人的法律后果与权限限制</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC59%E6%9D%A1">第59条</a></td>
+<td>股东会选举和更换董事、监事</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC67%E6%9D%A1">第67条</a></td>
+<td>董事会的职权</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC68%E6%9D%A1">第68条</a></td>
+<td>董事会的组成（三人以上）与职工代表</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC69%E6%9D%A1">第69条</a></td>
+<td>审计委员会制度（单层制）</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC70%E6%9D%A1">第70条</a></td>
+<td>董事任期不超过三年，可连选连任；辞任规则</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC73%E6%9D%A1">第73条</a></td>
+<td>董事会决议规则（过半数出席、过半数通过、一人一票）</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC74%E6%9D%A1">第74条</a></td>
+<td>经理的职权</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC75%E6%9D%A1">第75条</a></td>
+<td>规模较小公司的简化治理（可不设董事会）</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC76%E6%9D%A1">第76条</a></td>
+<td>有限责任公司监事会组成（三人以上）</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC78%E6%9D%A1">第78条</a></td>
+<td>监事会的职权</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC83%E6%9D%A1">第83条</a></td>
+<td>一人监事或不设监事（全体股东一致同意）</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC137%E6%9D%A1">第137条</a></td>
+<td>上市公司审计委员会的特定决议事项</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC178%E6%9D%A1">第178条</a></td>
+<td>董监高的消极任职资格（六类不适格情形）</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC180%E6%9D%A1">第180条</a></td>
+<td>忠实义务与勤勉义务的定义；实质董事</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC181%E6%9D%A1">第181条</a></td>
+<td>董监高的六项禁止行为</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC182%E6%9D%A1">第182条</a></td>
+<td>关联交易规制（自我交易）</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC183%E6%9D%A1">第183条</a></td>
+<td>谋取公司商业机会</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC184%E6%9D%A1">第184条</a></td>
+<td>竞业禁止义务</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC185%E6%9D%A1">第185条</a></td>
+<td>关联董事回避表决</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC186%E6%9D%A1">第186条</a></td>
+<td>归入权</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC188%E6%9D%A1">第188条</a></td>
+<td>对公司的赔偿责任</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC189%E6%9D%A1">第189条</a></td>
+<td>股东代表诉讼</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC190%E6%9D%A1">第190条</a></td>
+<td>股东直接诉讼</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC191%E6%9D%A1">第191条</a></td>
+<td>对第三人的赔偿责任</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC192%E6%9D%A1">第192条</a></td>
+<td>影子董事、高管：控股股东/实控人指示董高损害公司利益的连带责任</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC193%E6%9D%A1">第193条</a></td>
+<td>董事责任保险</td>
+</tr>
+<tr>
+<td><a href="/gongsi-kb/articles/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%B3%95%E5%85%A8%E6%96%87-2023%E5%B9%B4%E4%BF%AE%E8%AE%A2/#%E7%AC%AC265%E6%9D%A1">第265条</a></td>
+<td>高级管理人员的定义</td>
+</tr>
+</tbody>
+</table></div><hr>
+<p><strong>相关章节</strong>：<a href="/gongsi-kb/articles/%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1-%E4%BC%9A%E8%AE%A1%E5%88%B6%E5%BA%A6/">📋 公司法知识库/08-公司财务会计</a> | <a href="/gongsi-kb/articles/%E5%85%AC%E5%8F%B8%E9%87%8D%E5%A4%A7%E5%8F%98%E6%9B%B4/">📋 公司法知识库/09-公司重大变更</a> | <a href="/gongsi-kb/articles/%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8/">📋 公司法知识库/11-有限责任公司</a> | <a href="/gongsi-kb/articles/%E7%8E%8B%E6%AF%93%E8%8E%B9%E6%95%99%E6%8E%88%E5%85%AC%E5%8F%B8%E6%B3%95%E5%AD%A6%E6%9C%AF%E8%A7%82%E7%82%B9/">学者观点：王毓莹</a>（催缴义务=信义义务=勤勉义务；体系化董事责任制度；控股股东违信责任）</p>
 </div> <div class="mt-12 border-t border-gray-200 dark:border-primary-800 pt-8" data-astro-cid-ligjhper> <h2 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4" data-astro-cid-ligjhper>📎 相关文章</h2> <div class="space-y-3" data-astro-cid-ligjhper> <a href="/gongsi-kb/articles/中华人民共和国公司法全文-2023年修订/" class="group flex items-start gap-3 bg-white dark:bg-primary-900 rounded-lg p-3 border border-gray-200 dark:border-primary-800 hover:border-accent-300 dark:hover:border-accent-600 transition-all" data-astro-cid-ligjhper> <div class="flex-1 min-w-0" data-astro-cid-ligjhper> <div class="text-xs text-gray-400 dark:text-gray-500 mb-1" data-astro-cid-ligjhper>法律全文</div> <div class="font-medium text-gray-800 dark:text-gray-200 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors" data-astro-cid-ligjhper>中华人民共和国公司法全文（2023年修订）</div> </div> </a><a href="/gongsi-kb/articles/公司法总览/" class="group flex items-start gap-3 bg-white dark:bg-primary-900 rounded-lg p-3 border border-gray-200 dark:border-primary-800 hover:border-accent-300 dark:hover:border-accent-600 transition-all" data-astro-cid-ligjhper> <div class="flex-1 min-w-0" data-astro-cid-ligjhper> <div class="text-xs text-gray-400 dark:text-gray-500 mb-1" data-astro-cid-ligjhper>总论</div> <div class="font-medium text-gray-800 dark:text-gray-200 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors" data-astro-cid-ligjhper>公司法总览</div> </div> </a><a href="/gongsi-kb/articles/公司法基础理论/" class="group flex items-start gap-3 bg-white dark:bg-primary-900 rounded-lg p-3 border border-gray-200 dark:border-primary-800 hover:border-accent-300 dark:hover:border-accent-600 transition-all" data-astro-cid-ligjhper> <div class="flex-1 min-w-0" data-astro-cid-ligjhper> <div class="text-xs text-gray-400 dark:text-gray-500 mb-1" data-astro-cid-ligjhper>总论</div> <div class="font-medium text-gray-800 dark:text-gray-200 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors" data-astro-cid-ligjhper>公司法基础理论</div> </div> </a><a href="/gongsi-kb/articles/公司的分类/" class="group flex items-start gap-3 bg-white dark:bg-primary-900 rounded-lg p-3 border border-gray-200 dark:border-primary-800 hover:border-accent-300 dark:hover:border-accent-600 transition-all" data-astro-cid-ligjhper> <div class="flex-1 min-w-0" data-astro-cid-ligjhper> <div class="text-xs text-gray-400 dark:text-gray-500 mb-1" data-astro-cid-ligjhper>总论</div> <div class="font-medium text-gray-800 dark:text-gray-200 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors" data-astro-cid-ligjhper>公司的分类</div> </div> </a><a href="/gongsi-kb/articles/公司的能力/" class="group flex items-start gap-3 bg-white dark:bg-primary-900 rounded-lg p-3 border border-gray-200 dark:border-primary-800 hover:border-accent-300 dark:hover:border-accent-600 transition-all" data-astro-cid-ligjhper> <div class="flex-1 min-w-0" data-astro-cid-ligjhper> <div class="text-xs text-gray-400 dark:text-gray-500 mb-1" data-astro-cid-ligjhper>总论</div> <div class="font-medium text-gray-800 dark:text-gray-200 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors" data-astro-cid-ligjhper>公司的能力</div> </div> </a> </div> </div> </div> <!-- Right TOC: always scrollable independently --> <aside class="hidden lg:block w-64 flex-shrink-0" data-astro-cid-ligjhper> <div class="sticky top-24 max-h-[calc(100vh-7rem)] overflow-y-auto pr-2 pb-8 scrollbar-thin" data-astro-cid-ligjhper> <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-3" data-astro-cid-ligjhper>目录</h3> <nav id="toc-desktop" class="text-sm" data-astro-cid-ligjhper></nav> </div> </aside> </article>  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script> <script>
     document.addEventListener('DOMContentLoaded', function() {
       // ===== Build nested TOC =====
@@ -920,4 +1054,4 @@
         }
       }
     });
-  </script>   <button id="toc-toggle" class="fixed bottom-6 right-6 z-40 lg:hidden w-11 h-11 rounded-full shadow-lg bg-accent-600 text-white flex items-center justify-center hover:bg-accent-700 active:bg-accent-800 transition-colors" aria-label="打开目录" data-astro-cid-ligjhper> <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-ligjhper> <path d="M4 6h16M4 12h10M4 18h14" data-astro-cid-ligjhper></path> </svg> </button> <div id="toc-overlay" class="fixed inset-0 z-40 bg-black/40 hidden lg:hidden" data-astro-cid-ligjhper></div> <div id="toc-panel" class="fixed top-0 right-0 z-50 lg:hidden w-72 h-full bg-white dark:bg-primary-900 border-l border-gray-200 dark:border-primary-800 transform translate-x-full transition-transform duration-300 overflow-y-auto pt-16 px-4 pb-8" data-astro-cid-ligjhper> <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-3" data-astro-cid-ligjhper>目录</h3> <nav id="toc-mobile" class="text-sm" data-astro-cid-ligjhper></nav> </div>  </div> </main> </div> <!-- Footer --> <footer class="border-t border-primary-200/60 dark:border-primary-800/30 mt-auto"> <div class="max-w-[1800px] mx-auto px-6 py-6 flex items-center justify-between text-[11px] text-gray-400 dark:text-gray-600"> <span class="font-display">公司法知识库</span> <div class="flex items-center gap-4"> <a href="https://github.com/oystero" target="_blank" rel="noopener" class="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">GitHub</a> <a href="mailto:oystero185@gmail.com" class="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">oystero185@gmail.com</a> </div> </div> </footer> <div id="sidebar-overlay" class="fixed inset-0 z-20 bg-black/40 hidden lg:hidden"></div> <script type="module">const g=document.getElementById("theme-toggle"),o=document.getElementById("theme-light-icon"),s=document.getElementById("theme-dark-icon"),u=document.documentElement.classList.contains("dark");u?(o?.classList.add("hidden"),s?.classList.remove("hidden")):(o?.classList.remove("hidden"),s?.classList.add("hidden"));g?.addEventListener("click",()=>{const e=!document.documentElement.classList.contains("dark");document.documentElement.style.transition="background-color 0.3s, color 0.3s",document.body.style.transition="background-color 0.3s, color 0.3s",e?(document.documentElement.classList.add("dark"),o?.classList.add("hidden"),s?.classList.remove("hidden"),localStorage.setItem("theme","dark")):(document.documentElement.classList.remove("dark"),o?.classList.remove("hidden"),s?.classList.add("hidden"),localStorage.setItem("theme","light")),setTimeout(()=>{document.documentElement.style.transition="",document.body.style.transition=""},300)});const h=document.getElementById("mobile-menu-toggle"),y=document.getElementById("sidebar"),r=document.getElementById("sidebar-overlay");function a(){y?.classList.toggle("-translate-x-full"),r?.classList.toggle("hidden")}h?.addEventListener("click",a);r?.addEventListener("click",a);document.querySelectorAll(".sidebar-module").forEach(e=>{const t=e.querySelector(".sidebar-toggle"),d=e.querySelector("a"),c=e.querySelector(".sidebar-articles");if(!c)return;function l(n){n.preventDefault(),n.stopPropagation();const m=t?.querySelector("svg");c.classList.toggle("hidden"),m?.classList.toggle("rotate-90")}t?.addEventListener("click",l),d?.addEventListener("click",n=>{window.innerWidth<1024&&l(n)})});const i=document.getElementById("reading-progress");window.addEventListener("scroll",()=>{const e=window.scrollY,t=document.documentElement.scrollHeight-window.innerHeight,d=t>0?e/t*100:0;i&&(i.style.width=`${Math.min(100,d)}%`)});document.addEventListener("keydown",e=>{(e.ctrlKey||e.metaKey)&&e.key==="k"&&(e.preventDefault(),window.location.href="/gongsi-kb/search/")});</script> </body> </html> 
+  </script>   <button id="toc-toggle" class="fixed bottom-6 right-6 z-40 lg:hidden w-11 h-11 rounded-full shadow-lg bg-accent-600 text-white flex items-center justify-center hover:bg-accent-700 active:bg-accent-800 transition-colors" aria-label="打开目录" data-astro-cid-ligjhper> <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-ligjhper> <path d="M4 6h16M4 12h10M4 18h14" data-astro-cid-ligjhper></path> </svg> </button> <div id="toc-overlay" class="fixed inset-0 z-40 bg-black/40 hidden lg:hidden" data-astro-cid-ligjhper></div> <div id="toc-panel" class="fixed top-0 right-0 z-50 lg:hidden w-72 h-full bg-white dark:bg-primary-900 border-l border-gray-200 dark:border-primary-800 transform translate-x-full transition-transform duration-300 overflow-y-auto pt-16 px-4 pb-8" data-astro-cid-ligjhper> <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-3" data-astro-cid-ligjhper>目录</h3> <nav id="toc-mobile" class="text-sm" data-astro-cid-ligjhper></nav> </div>  </div> </main> </div> <!-- Footer --> <footer class="border-t border-primary-200/60 dark:border-primary-800/30 mt-auto"> <div class="max-w-[1800px] mx-auto px-6 py-6 flex items-center justify-between text-[11px] text-gray-400 dark:text-gray-600"> <span class="font-display">公司法知识库</span> <div class="flex items-center gap-4"> <a href="https://github.com/oystero" target="_blank" rel="noopener" class="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">GitHub</a> <a href="mailto:zoe020808@gmail.com" class="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">zoe020808@gmail.com</a> </div> </div> </footer> <div id="sidebar-overlay" class="fixed inset-0 z-20 bg-black/40 hidden lg:hidden"></div> <script type="module">const g=document.getElementById("theme-toggle"),o=document.getElementById("theme-light-icon"),s=document.getElementById("theme-dark-icon"),u=document.documentElement.classList.contains("dark");u?(o?.classList.add("hidden"),s?.classList.remove("hidden")):(o?.classList.remove("hidden"),s?.classList.add("hidden"));g?.addEventListener("click",()=>{const e=!document.documentElement.classList.contains("dark");document.documentElement.style.transition="background-color 0.3s, color 0.3s",document.body.style.transition="background-color 0.3s, color 0.3s",e?(document.documentElement.classList.add("dark"),o?.classList.add("hidden"),s?.classList.remove("hidden"),localStorage.setItem("theme","dark")):(document.documentElement.classList.remove("dark"),o?.classList.remove("hidden"),s?.classList.add("hidden"),localStorage.setItem("theme","light")),setTimeout(()=>{document.documentElement.style.transition="",document.body.style.transition=""},300)});const h=document.getElementById("mobile-menu-toggle"),y=document.getElementById("sidebar"),r=document.getElementById("sidebar-overlay");function a(){y?.classList.toggle("-translate-x-full"),r?.classList.toggle("hidden")}h?.addEventListener("click",a);r?.addEventListener("click",a);document.querySelectorAll(".sidebar-module").forEach(e=>{const t=e.querySelector(".sidebar-toggle"),d=e.querySelector("a"),c=e.querySelector(".sidebar-articles");if(!c)return;function l(n){n.preventDefault(),n.stopPropagation();const m=t?.querySelector("svg");c.classList.toggle("hidden"),m?.classList.toggle("rotate-90")}t?.addEventListener("click",l),d?.addEventListener("click",n=>{window.innerWidth<1024&&l(n)})});const i=document.getElementById("reading-progress");window.addEventListener("scroll",()=>{const e=window.scrollY,t=document.documentElement.scrollHeight-window.innerHeight,d=t>0?e/t*100:0;i&&(i.style.width=`${Math.min(100,d)}%`)});document.addEventListener("keydown",e=>{(e.ctrlKey||e.metaKey)&&e.key==="k"&&(e.preventDefault(),window.location.href="/gongsi-kb/search/")});</script> </body> </html> 
